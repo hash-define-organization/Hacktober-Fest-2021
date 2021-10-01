@@ -12,18 +12,18 @@ Output:- 1 2 3 4 5 6 12 18 17 16 15 14 13 7 8 9 10 11
 using namespace std;
 
 int main(){
-    int n, m;
-    cin>>n>> m;
-    int arr[n][m];
+    int row, column;
+    cin>>row>> column;
+    int arr[row][column];
     
     // Taking in 2d array
-    for(int i=0; i<n; i++){
-        for(int j=0; j<m; j++){
+    for(int i=0; i<row; i++){
+        for(int j=0; j<column; j++){
             cin>>arr[i][j];
         }
     }
 
-    int start_row=0, end_row=n-1, start_col=0, end_col=m-1;
+    int start_row=0, end_row=row-1, start_col=0, end_col=column-1;
     while(start_row<=end_row && start_col<=end_col){
         if (start_row<=end_row){
             for(int i=start_col; i<=end_col; i++){
