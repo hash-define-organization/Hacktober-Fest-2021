@@ -1,6 +1,5 @@
 /* -------------------------------------------------------------------------- */
 /*                             Check Prime Number                             */
-/*                              By @AnmolManocha                              */
 /* -------------------------------------------------------------------------- */
 
 import java.util.Scanner;
@@ -43,3 +42,20 @@ class primeNumber {
         MultipleCheckPrime(Cases);
     }
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   Output                                   */
+/* -------------------------------------------------------------------------- */
+/*
+Enter No. of Test Case: 5
+Enter your Number: 7
+Prime
+Enter your Number: 25
+Non Prime
+Enter your Number: 13
+Prime
+Enter your Number: 23
+Prime
+Enter your Number: 75
+Non Prime
+*/
