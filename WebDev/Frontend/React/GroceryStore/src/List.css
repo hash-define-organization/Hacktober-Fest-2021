@@ -1,0 +1,88 @@
+.output {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    height: 220px;
+    top: 30px;
+    overflow-y: scroll;
+}
+
+.item {
+    position: relative;
+    text-transform: capitalize;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.item button {
+    position: relative;
+    float: right;
+    margin: 0px 6px;
+    padding: 0px;
+    font-size: 20px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.delete {
+    color: rgb(253, 32, 32);
+    position: relative;
+    left: -10px;
+}
+
+.edit {
+    color: rgb(32, 255, 32);
+    position: relative;
+    left: -10px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(170, 170, 170);
+    border-radius: 10px;
+}
+
+.zero {
+    text-align: center;
+    color: rgba(255, 0, 0, 0.719);
+    font-size: 17px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 845px) {
+    .output {
+        height: 295px;
+    }
+    .delete {
+        left: 0px;
+    }
+    .edit {
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .output {
+        width: 80%;
+    }
+    .delete {
+        left: -10px;
+    }
+    .edit {
+        left: -10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .output {
+        top: 10px;
+        height: 285px;
+    }
+}
