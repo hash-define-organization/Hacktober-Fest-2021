@@ -14,7 +14,8 @@ Hacktoberfest is a month-long celebration of open source software run by Digital
 ### 📌PARTICIPATION RULES 📝:-
 
 Pull requests can be to any public repository on GitHub, not just the ones highlighted. The pull request must contain commits you made yourself. If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest. If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.
-![df]("C:\Users\91931\Desktop\df.gif")![image](https://user-images.githubusercontent.com/80260891/135570731-74e58a32-f320-4a07-86f7-fb53f5807b9e.png)
+
+![image](https://user-images.githubusercontent.com/80260891/135570731-74e58a32-f320-4a07-86f7-fb53f5807b9e.png)
 
 
 ## 📌 Rules Regarding Submission of PR
