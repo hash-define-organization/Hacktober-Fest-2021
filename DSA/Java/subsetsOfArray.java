@@ -11,15 +11,9 @@ public class subsetsOfArray {
         for (int i = 0; i < size; i++) {
             arr[i] = scn.nextInt();
         }
-        int lim = (1 << size);// lim -> limit -> total number of subsets
-
-        // step 1 -> run loop from 0 -> limit
+        int limit;
         for (int i = 0; i < lim; i++) {
-            int dec = i;// dec -> decimal of 'i'
-
-            // find binary of the decimal and if rem is 0 then don't print, otherwise print
-            // element
-            // decimal to binary conversion
+            int dec = i;
             String str = "";
             for (int j = 0; j < arr.length; j++) {
                 int rem = dec % 2;
