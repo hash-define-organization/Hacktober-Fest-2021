@@ -35,3 +35,20 @@ int main()
     }
     return 0;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   Output                                   */
+/* -------------------------------------------------------------------------- */
+/*
+ENTER THE NO. OF ELEMENTS:5
+ENTER ARRAY ELEMENTS:
+24      48      17      38      20
+ENTERED ARRAY ELEMENTS ARE: 
+24
+48
+17
+38
+20
+ENTER THE ELEMENT TO BE SEARCHED:38
+38 FOUND AT POSITION 4
+*/
