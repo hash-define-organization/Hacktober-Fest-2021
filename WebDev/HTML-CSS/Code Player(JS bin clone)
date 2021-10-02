@@ -1,0 +1,211 @@
+<html>
+     
+	 <head> 
+	  
+   		  <title>JQuery</title>
+	      <script src="jquery-3.5.1.min.js"></script>
+		   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+	      
+      <style>
+           body{
+				      
+					  font-family:sans-serif;
+				      padding:0;
+					  margin:0;
+				  
+				      }
+					  
+				#header{
+				       width:100%;
+					   background-color:#EEEEEE;
+				        padding:5px;
+						height:30px;
+				
+				       }
+					   
+			      #logo{
+			          
+					    float:left;
+						font-weight:bold;
+						font-size:120%
+						padding:3px 5px;
+			           }
+		  
+		        #buttonContainer{
+				            width:233px;
+							margin:0 auto;
+				
+				}
+				.togglebutton{
+                         float:left;
+				         border: 1px solid grey;
+				         padding:6px;
+						 border-right:none;
+						 font-size:90%;
+				
+				}
+				
+				#html{
+                     border-top-left-radius:4px;
+					 border-bottom-left-radius:4px;
+				
+				
+				}
+				
+				#output{
+				
+				      border-top-right-radius:4px;
+					  border-bottom-right-radius:4px;
+					  border-right:1px solid grey;
+					  
+				
+				
+				}
+				
+				.active{
+				
+				background-color:#E8F2FF;
+				
+				}
+				
+				
+				.highlightedbutton{
+				
+				         background-color: grey;
+				
+				
+				}
+				
+				textarea{
+				  
+					resize:none;
+				    border-top:none;
+					border-color:grey;
+				
+				}
+				
+				.panel{
+				
+				  float:left;
+				  width:50%;
+				  border-left:none;
+				
+				
+				
+				}
+				
+				iframe{
+				
+				border:none;
+				
+				}
+				
+				.hidden{
+				
+				  display:none;
+				
+				}
+		  
+		  
+          
+      </style>
+	 </head>
+	   
+	   
+	   
+	   
+	   <body>
+	       <div id="header">
+		        <div id="logo">
+				     TswPlayer
+				</div>
+				<div id="buttonContainer">
+				   <div class="togglebutton active" id ="html">HTML</div>
+				   
+				   <div class="togglebutton" id="css">CSS</div>
+				   
+				   <div class="togglebutton" id="javascript">Javascript</div>
+				   
+				   <div class="togglebutton active" id="output">Output</div>
+				  
+				</div>
+	   
+	        </div>
+			
+			
+			
+			<div id="bodyContainer">
+			 
+			       <textarea id="htmlpanel" class="panel"><p id="paragraph">Hello World!</p></textarea>
+				   
+				    <textarea id="csspanel" class="panel hidden">p {color:red;}</textarea>
+					
+					<textarea id="javascriptpanel" class="panel hidden">document.getElementById("paragraph").innerHTML="Hello World!";</textarea>
+				   
+				   <iframe id="outputpanel" class="panel"></iframe>
+				   
+			</div>
+	     
+      <script >
+          
+            function updateOutput(){
+					$("iframe").contents().find("html").html("<html> <head> <style type ='text/css'>" + $("#csspanel").val() + "</style> </head> <body>"+ $("#htmlpanel").val()+"</body> </html>");
+					
+					document.getElementById("outputpanel").contentWindow.eval($("#javascriptpanel").val());
+					
+					
+					}
+		            
+					$(".togglebutton").hover(function(){
+					
+					       $(this).addClass("highlightedbutton");
+					
+					},function(){
+					
+					        $(this).removeClass("highlightedbutton");
+					
+					});
+					
+					
+					
+					
+					
+					$(".togglebutton").click(function(){
+					
+					         $(this).toggleClass("active");
+							
+							$(this).removeClass("highlightedbutton");
+							
+							var panelId = $(this).attr("id")+"panel";
+							
+							$("#" + panelId).toggleClass("hidden");
+							
+							var numberofactivepanels= 4-$('.hidden').length;
+							
+							$(".panel").width(($(window).width() / numberofactivepanels) -10);
+					
+					});
+					    
+						
+					
+					$(".panel").height($(window).height() - $("#header").height()-15);
+					
+					$(".panel").width(($(window).width()/2) -10);
+					
+					updateOutput();
+					
+					$("textarea").on('change keyup paste', function(){
+					
+					updateOutput();
+					
+					});
+					
+          
+          
+          
+      </script>
+	   
+	   </body>
+	   
+
+</html>
