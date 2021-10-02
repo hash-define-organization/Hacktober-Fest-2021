@@ -33,7 +33,7 @@ void printArray(int arr[], int size)
 //MAIN FUNCTION
 int main()
 {
-     int n;       //taking size of array as input
+    int n;       //taking size of array as input
     cin>>n;
     int arr[n];
     for(int i=0;i<n;i++)
