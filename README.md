@@ -1,7 +1,7 @@
 <h1 align="center">	&#127875;<b><i>It's October, so is Hacktoberfest</i></b>	&#127875; </h1>
 
 <h1 align="center">
-  <a><img src="https://github.com/pratyaksh1610/Hacktober-Fest-2021/blob/master/circle_cropped.png?raw=true" alt="define" width="200"></a>
+  <a><img src="./readmeSrc/circle_cropped.png" alt="define" width="200"></a>
    <br>
    #define
    <br>
