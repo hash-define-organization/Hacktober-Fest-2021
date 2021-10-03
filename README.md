@@ -79,6 +79,7 @@ git push origin branch_name
 * Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
 * Wait for your PR review and approval from the maintainers.
 * :star: this repository if you liked it.
+* Check your progress here (https://hacktoberfest.digitalocean.com/profile)
 
 ## 📜 Our Standards
 
@@ -113,6 +114,12 @@ git push origin branch_name
   <a href="https://www.youtube.com/channel/UCDqf3_N1l7s0dVAVycN8FQA">
     <img width="30px" src="https://seeklogo.com/images/Y/youtube-2017-icon-logo-D1FE045118-seeklogo.com.png" />
 </a>&ensp;
+
+<a href="mailto:hashdefinebpit@gmail.com">
+  <img width="30px" src="https://seeklogo.com/images/G/gmail-new-2020-logo-32DBE11BB4-seeklogo.com.png" />
+</a>&ensp;
+
+
  
  
  ## 	:game_die: Shoutout to all the contributors ❤️
