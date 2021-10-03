@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login Page</title>
+    
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/alert.css">
+    <link rel="stylesheet" href="./css/siginButton.css">
+    <link rel="stylesheet" href="./css/dasboard.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+    <body>
+        <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/firebase@8.7.0/firebase-app.js"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/firebase@8.7.0/firebase-auth.js"></script> -->
+        <script type="module" src="./js/firebase.js" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+             
+        <div class="login">
+
+            <div class="alert success-alert" id="alert-message" style="display: none;">
+                <h3 id="login-message">Warning Alert Message</h3>
+                <a class="close">&times;</a>
+            </div>
+            
+            <div id="snackbar">This is a Pop Up !</div>
+
+            <!-- Login Form -->
+            <div class="login__content login-div">
+                <div class="login__forms">
+
+                    <form action="" class="login__registre" id="login-in">
+
+                        <div>
+                            <img class="logo" src="./assets/logo.gif" alt="Paris" height="80px" width="80px">
+                        </div>    
+
+                        <div class="title">Sign In to Dashboard</div>
+    
+                        <div class="login__box username fields">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Username" class="login__input login__input_username" value="test@test.com" required>
+                        </div>
+    
+                        <div class="login__box password fields">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Password" class="login__input login__input_password" value="testtest" required>
+                        </div>
+
+                        <div class="login__forgot">
+                            <a href="#" class="login__forgot" id="login__forgot">Forgot password?</a>
+                        </div>
+                        
+
+                        <!-- <button id="show-snackbar">Show Snackbar</button> -->
+                        <!-- The actual snackbar -->
+                        <input type="button" class="signin-button-submit" id="show-snackbar" value="Login">
+
+                        <div class="bottom_message">
+                            <span class="login__account">Don't have an Account ?</span>
+                            <span class="login__signin" id="sign-up">Sign Up</span>
+                        </div>
+
+                        <div class="separator">OR</div>
+                        
+                        <div class="google-signin-btn">                            
+                            <button type="button" class="login-with-google-btn" id="login-with-google-btn">
+                                Sign in with Google
+                            </button>
+                        </div>
+                        
+                    </form>
+
+                    <form action="" class="login__create none" id="login-up">
+                        <div>
+                            <img class="logo" src="./assets/logo.gif" alt="Paris" height="80px" width="80px">
+                        </div>    
+
+                        <div class="title">Sign Up to Create Account</div>
+    
+                        <div class="login__box username fields">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Username" class="login__input" required>
+                        </div>
+    
+                        <div class="login__box username fields">
+                            <i class='bx bx-at login__icon'></i>
+                            <input type="text" placeholder="Email" class="login__input login__input_email" required>
+                        </div>
+
+                        <div class="login__box fields password">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Password" class="login__input login__input_password" required>
+                        </div>
+                        
+                        <input type="button" class="signup-button-submit" id="signup-button-submit" value="Create Account">
+
+                        <div class="bottom_message">
+                            <span class="login__account">Already have an Account ?</span>
+                            <span class="login__signin" id="sign-in">Sign In</span>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <script type="module" src="./js/authentication.js"></script>
+        <script type="module" src="./js/login.js"></script>
+
+    </body>
+</html>

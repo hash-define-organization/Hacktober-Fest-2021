@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/dasboard.css">
+
+</head>
+<body>  
+    <script type="module" src="https://cdn.jsdelivr.net/npm/firebase@8.7.0/firebase-app.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/firebase@8.7.0/firebase-auth.js"></script>
+    <script type="module" src="./js/firebase.js"></script>
+    <script type="module" src="./js/dashboard.js" defer></script>
+        
+        <!-- <button id="Logout">Logout</button> -->
+        
+        <div class="email">
+            <h3 id = "email" value="">null</h3>
+        </div>
+        
+        <button id="show-snackbar">Show Snackbar</button>
+        <!-- The actual snackbar -->
+        <div id="snackbar">Some text some message..</div>
+        
+        <button id="signout" style="cursor:pointer;">Sign Out</button>
+
+</body>
+</html>

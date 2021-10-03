@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+ * {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+ h3 {
+	 font-family: Quicksand;
+}
+ .alert {
+	 width: 30vw;
+	 min-width: 400px;
+	 /* margin: 10px auto; */
+	 margin-bottom: 3%;
+	 padding: 20px;
+	 position: relative;
+	 border-radius: 5px;
+	 box-shadow: 0 0 15px 5px #ccc;
+}
+ .close {
+	 position: absolute;
+	 width: 30px;
+	 height: 30px;
+	 opacity: 0.5;
+	 border-width: 1px;
+	 /* border-style: solid; */
+	 /* border-radius: 50%; */
+	 right: 2px;
+	 top: 2px;
+	 text-align: center;
+	 font-size: 1.6em;
+	 cursor: pointer;
+}
+ .simple-alert {
+	 background-color: #ebebeb;
+	 border-left: 5px solid #6c6c6c;
+}
+ .simple-alert .close {
+	 border-color: #6c6c6c;
+	 color: #6c6c6c;
+}
+ .success-alert {
+	 background-color: #a8f0c6;
+	 border-left: 5px solid #178344;
+}
+ .success-alert .close {
+	 border-color: #178344;
+	 color: #178344;
+}
+ .danger-alert {
+	 background-color: #f7a7a3;
+	 border-left: 5px solid #8f130c;
+}
+ .danger-alert .close {
+	 border-color: #8f130c;
+	 color: #8f130c;
+}
+ .warning-alert {
+	 background-color: #ffd48a;
+	 border-left: 5px solid #8a5700;
+}
+ .warning-alert .close {
+	 border-color: #8a5700;
+	 color: #8a5700;
+}
