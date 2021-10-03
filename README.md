@@ -50,57 +50,75 @@
 ## :label: Getting Started
 
 * First, fork the repository (Click the <b><b>Fork</b></b> button in the top right corner of the page).
-* Clone your fork repository to your local machine.
+* Clone the forked repository to your local machine.
 
 ```markdown
 git clone https://github.com/your-username/hacktoberfest.git
 ```
+
 * Add upstream URL 
+```markdown
+git remote add upstream https://github.com/hash-define-organization/Hacktober-Fest-2021.git
+```
+
 * Create a new branch
 
 ```markdown
-git checkout -b branch-name
+git checkout -b branch_name
 ```
 
-* Make your changes (choose from any task below)
-* Commit and push
+* Make your contribution
+* Commit and push the changes
 
 ```markdown
 git add .
-git commit -m 'Commit message'
-git push origin branch-name
+git commit -m 'Relevant message'
+git push origin branch_name
 ```
 
 * Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
-* Wait for your PR review and merge approval!
-* __Star this repository__ if you had fun!
+* Wait for your PR review and approval from the maintainers.
+* :star: this repository if you liked it.
+
+## 📜 Our Standards
+
+:arrow_forward: Using welcoming language.
+
+:arrow_forward: Being respectful to others viewpoints.
+
+:arrow_forward: Accepting constructive criticism.
+
+:arrow_forward: Heavily focusing on what is best for the community
 
 
+## :label: About #DEFINE :trophy:
+
+:point_right: We at  #define aim to build a platform that will not only encourage you to find which domain interests you but will also help you to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; come forward and gain expertise in that.
+
+:point_right: #define has also started a New Developer Circle in different colleges and college students in term of coding, development any many &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;more.
+
+## 	:dart: For more updates and upcoming events connect with us 
+
+  <a href="https://discord.gg/tTs553YWyb">
+    <img width="30px" src="https://www.vectorlogo.zone/logos/discordapp/discordapp-tile.svg" />
+  </a>&ensp;
+   
+  <a href="https://in.linkedin.com/in/hashdefine?trk=people-guest_people_search-card">
+    <img width="30px" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" />
+  </a>&ensp;
+  <a href="https://www.instagram.com/hash_define/">
+    <img width="30px" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" />
+</a>&ensp;
+ 
+  <a href="https://www.youtube.com/channel/UCDqf3_N1l7s0dVAVycN8FQA">
+    <img width="30px" src="https://seeklogo.com/images/Y/youtube-2017-icon-logo-D1FE045118-seeklogo.com.png" />
+</a>&ensp;
+ 
+ 
+ ## 	:game_die: Shoutout to all the contributors ❤️
+
+<a href="https://github.com/hash-define-organization/Hacktober-Fest-2021/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=hash-define-organization/Hacktober-Fest-2021" />
+</a>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 👉ABOUT #DEFINE
-
-We at  #define aim to build a platform that will not only encourage you to find which domain interests you but will also help you to come forward and gain expertise in that.
-#define has also started a New Developer Circle in different colleges and college students in term of coding, development any many more.
-
-# <h1 align="center">[JOIN OUR DISCORD SERVER](https://discord.gg/tTs553YWyb)</h1>
