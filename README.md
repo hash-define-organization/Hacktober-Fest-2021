@@ -33,10 +33,16 @@
 #### :dart: Let's celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community and start your journey in open source.
 #### :dart: This repository is open to all the members of the GitHub community. Feel free to contribute to this repository.<br>
 
+
 <p align="center">
+  <img src="https://i.ibb.co/NxXxwHX/define-logo.jpg" alt="define-logo" border="0"></a>
+</p>
+
+
+<!-- <p align="center">
   <a><img src="https://qph.fs.quoracdn.net/main-qimg-82b7314fe96c4a2d8f3088207a4afd8d" alt="define" width="500"></a>
   <br>
-  <br>
+  <br> -->
   
 ## :label: What is Hacktoberfest ? :computer:
 
@@ -76,6 +82,11 @@
 
 | *MobileDev* | *CyberSec* | *DSA* | *ML-AI* | *WebDev* |
 | --- | --- | --- | --- | --- | 
+  
+  <p align="center">
+  <a><img src="https://qph.fs.quoracdn.net/main-qimg-82b7314fe96c4a2d8f3088207a4afd8d" alt="define" width="500"></a>
+  <br>
+  <br>
  
 ## :label: Getting Started
 
