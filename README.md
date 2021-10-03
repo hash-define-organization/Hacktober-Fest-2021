@@ -129,9 +129,9 @@ git push origin branch_name
 
 ## :label: About #DEFINE :trophy:
 
-:point_right: We at  #define aim to build a platform that will not only encourage you to find which domain interests you but will also help you to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; come forward and gain expertise in that.
+:point_right: We at  #define aim to build a platform that will not only encourage you to find which domain interests you but will also help you to &nbsp;&nbsp;&nbsp;&nbsp;come forward and gain expertise in that.
 
-:point_right: #define has also started a New Developer Circle in different colleges and college students in term of coding, development any many &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;more.
+:point_right: #define has also started a New Developer Circle in different colleges and college students in term of coding, development any many &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;more.
 
  ## 	:game_die: Shoutout to all the contributors ❤️
 
