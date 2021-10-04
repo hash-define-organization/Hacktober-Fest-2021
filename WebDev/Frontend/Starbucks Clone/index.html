@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="starbucks_logo_icon_170704.ico" />
+    <link rel="apple-touch-icon" href="starbucks_logo_icon_170704.png" />
+</head>
+<body onload="myFunction()">
+    <div id="loading"></div>
+    <section>
+        
+        <div class="circle"></div>
+        <!-- header -->
+        <header>
+            <a href="#" class="logo"><img src="logo.png"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="sign.html">sign in</a></li>
+                <div class="cart">
+                <li><a href="address.html"><img src="icons8-shopping-cart-64.png" alt="" height="25" width="25"></a></li>
+                </div>
+            </ul>
+    </header>
+    <!-- content -->
+    <div class="content">
+        <div class="textBox">
+            <h2>It is not just coffee.<span class="anim-typewriter"></span> It's <span>Starbucks</span></span></h2>
+            <p>Since 1971, it always has been and will always be about quality. 
+                We’re passionate about ethically sourcing only the finest Arabica coffee 
+                beans and roasting them with great care.
+                 Our passion for coffee is rivaled only by our love of sharing it.
+                <span>Our coffee masters have distilled their years of tasting knowledge 
+                down to three simple questions to help you find a coffee you’re sure to love.</span>
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+        <!-- thumb-nail -->
+        <div class="imgBox">
+            <img src="img1.png" class="starbucks">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')" ></li>
+        <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495');"></li>
+        <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1');"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img src="facebook.png"></a></li>
+        <li><a href="#"><img src="twitter.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>
+    </ul>>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+        var preloader = document.getElementById("loading");
+		// window.addEventListener('load', function(){
+		// 	preloader.style.display = 'none';
+		// 	})
+
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+    </script>
+</body>
+</html>
