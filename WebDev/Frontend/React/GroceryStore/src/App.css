@@ -1,0 +1,200 @@
+body {
+    background-color: var(--clr-primary-10);
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--clr-white);
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    height: 425px;
+    min-width: 270px;
+    top: 20vh;
+    max-width: 800px;
+    box-shadow: var(--light-shadow);
+    padding: 1px;
+}
+
+.container:hover {
+    box-shadow: var(--dark-shadow);
+}
+
+.container h2 {
+    color: var(--clr-primary-1);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.badge {
+    background-color: var(--clr-primary-2);
+    color: white;
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    letter-spacing: 0px;
+}
+
+.input {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 30px;
+}
+
+.input input[type=text] {
+    position: relative;
+    width: 75%;
+    height: 30px;
+    border: none;
+    background-color: var(--clr-primary-10);
+    outline: none;
+    padding-left: 20px;
+    z-index: 100;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.input button {
+    position: relative;
+    width: 18%;
+    height: 33px;
+    border: none;
+    background-color: var(--clr-primary-7);
+    border-radius: 2px;
+    top: -1px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.input input[type=text]:focus {
+    outline: 3px groove var(--clr-primary-6);
+}
+
+.clear {
+    color: var(--clr-red-dark);
+    border: none;
+    background-color: transparent;
+    position: relative;
+    font-size: 18px;
+    width: 50%;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    left: 25%;
+    font-weight: 500;
+    height: 40px;
+    align-items: flex-end;
+    background-attachment: fixed;
+    top: 40px;
+    text-transform: capitalize;
+}
+
+.btndwnld {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+.btndwnld button {
+    border: none;
+    background-color: inherit;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .input input[type=text] {
+        width: 72%;
+    }
+    .input button {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .input input[type=text] {
+        width: 70%;
+    }
+    .input button {
+        width: 22%;
+    }
+    .container {
+        height: 500px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .input input[type=text] {
+        width: 70%;
+    }
+    .input button {
+        width: 22%;
+    }
+    .input {
+        width: 90%;
+    }
+    .container h2 {
+        font-size: 22px;
+    }
+    .clear {
+        top: 55px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .input input[type=text] {
+        width: 65%;
+    }
+    .input button {
+        width: 28%;
+    }
+    .container {
+        min-width: none;
+        max-width: none;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .input input[type=text] {
+        width: 93%;
+        margin-bottom: 10px;
+        height: 35px;
+    }
+    .container h2 {
+        font-size: 24px;
+    }
+    .input button {
+        width: 40%;
+        position: relative;
+        left: 30%;
+    }
+    .input {
+        height: 80px;
+    }
+    .container {
+        min-width: none;
+        max-width: none;
+        width: 80%;
+        top: 15vh
+    }
+    .clear {
+        top: 15px;
+    }
+}

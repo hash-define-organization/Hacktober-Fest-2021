@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+
+        <link rel="stylesheet" href="survey.css">
+
+    </head>
+    <div class="body-container">
+        
+        <header class="header">
+
+            <h1 id="title">Welcome to IJ's survey</h1>
+
+            <p id="description">Survey to rate my survey form</p>
+
+        </header>
+
+        <form id = "survey-form">
+
+            <div class="form-group">
+                
+                <label id="name-label" for="name" >Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your full name" class="form-control" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" class="form-control" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label id="number-label" for="age">Age</label>
+                <input type="number" id="number" name="age" min="0" max="99" placeholder="Age" class="form-control" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label id="dropdown-label" for="dropdown">What else would you like us to include</label>
+                <select id="dropdown" name="dropdown" required>
+
+                    <option disabled selected value>Choose one</option>
+                    <option value="audio">Audio file</option>
+                    <option value="video">Video file</option>
+                    <option value="game">mini-game</option>
+                    <option value="ide">ide</option>
+                    <option value="ice-cream">icecream</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <p id="lebel-para">Would you recommend this to your firend?</p>
+                <label>
+                    <input name="radio" type="radio" value="definitely" class="input-radio" checked>Definitely
+                </label>
+
+                <label>
+                    <input name="radio" type="radio" value="maybe" class="input-radio">Maybe
+                </label>
+
+                <label>
+                    <input name="radio" type="radio" value="no" class="input-radio">No
+                </label>
+
+            </div>
+            
+            <div class="form-group">
+
+                <p id="lebel-para">What can i improve in this form?</p>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="backgroundimage" class="input-checkbox">Background Image
+                </label>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="textcolor" class="input-checkbox">Text Color
+                </label>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="options" class="input-checkbox">Options
+                </label>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="alignment" class="input-checkbox">alignment
+                </label>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="font" class="input-checkbox">Font
+                </label>
+                
+            </div>
+
+            <div class="form-group">
+
+                <label for="comments">Additional comments</label>
+                <textarea id="comments" name="comments" value="comments" placeholder="Enter your comments" required></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</html>
