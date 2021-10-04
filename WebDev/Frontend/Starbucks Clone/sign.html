@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign in page</title>
+        <link rel="stylesheet" href="sign.css">
+        <link rel="icon" href="starbucks_logo_icon_170704.ico" />
+        <link rel="apple-touch-icon" href="starbucks_logo_icon_170704.png" />
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="user signInBx">
+                    <div class="imgBx">
+                        <img src="https://hips.hearstapps.com/del.h-cdn.co/assets/17/51/1513892402-starbucks-black-and-white-mocha-2.jpg" height="500" width="400">
+                    </div>
+                    <div class="formBx">
+                        <form action="index.html">
+                            <h2>Sign In</h2>
+                            <input type="text" name="" placeholder="Username">
+                            <input type="password" name="" placeholder="Password">
+                            <input type="submit" name="" placeholder="Login">
+                            <p class="signup">Don't have an account? <a href="#" onclick="toggleForm();">Sign up</a></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="user signupBx">
+                    <div class="formBx">
+                        <form action="index.html">
+                                <h2>Create an account</h2>
+                                <input type="text" name="" placeholder="Username">
+                                <input type="email" name="" placeholder="Email Address">
+                                <input type="password" name="" placeholder="Create Password">
+                                <input type="password" name="" placeholder="ConfirmPassword">
+                            
+                                <input type="submit" name="" placeholder="Login" onclick="myOnClickFn()">
+                                
+                                <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign in</a></p>
+                            </form>
+                        </div>
+                        <div class="imgBx">
+                            <img src="https://images.unsplash.com/photo-1542729779-11d8fe8e25f6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHw%3D&w=1000&q=80" height="500" width="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            function toggleForm(){
+                var container = document.querySelector('.container');
+                container.classList.toggle('active')
+            }
+            function myOnClickFn() {
+         document.location.href="index.html";
+            }
+        </script>
+    </body>
+</html>
