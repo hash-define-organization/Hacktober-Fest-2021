@@ -1,5 +1,5 @@
 // Find the value of  "s" and "t"  for equation { s × a + t × b = gcd (a, b) } and GCD of two number
-// It is use to find the particular solution of Linear Diophantine Equations
+// It is use to find the particular solution of Linear Diophantine Equations of two variables is ax + by = c.
 #include <bits/stdc++.h>
 
 using namespace std;

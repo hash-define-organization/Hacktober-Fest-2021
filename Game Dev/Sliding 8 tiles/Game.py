@@ -21,7 +21,7 @@ Gboard=[
     [5,8,7],
     [4,0,3],
     [2,6,1]]
-#empty tile coordinates
+
 Ex=1 
 Ey=1
 

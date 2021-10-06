@@ -6,7 +6,7 @@ int main()
 {
 
     int n, m;
-    cout << "Enter mod(Z) value and no : ";
+    cout << "Enter the numbers : ";
     cin >> n >> m;
 
     int r1, r2;
