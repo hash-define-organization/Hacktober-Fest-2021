@@ -1,0 +1,8 @@
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+set FLASK_ENV=development
+flask run
+
+Note : Everytime run Flask App, activate the venv environment
