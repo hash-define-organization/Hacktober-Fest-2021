@@ -1,0 +1,441 @@
+*{
+   box-sizing: border-box;
+}
+body{
+   margin:0px;
+   background-color: black;  
+   overflow: hidden;
+}
+.video-container{
+   background-color: black;
+   position: absolute;
+   z-index: -1; 
+   top: 0vh;
+   height: 100vh;
+   width: 100vw;
+ 
+   text-align: center;
+}
+.video{
+   height: 100%;
+   width: 100%;
+}
+
+
+
+
+
+.btn-container{
+   padding-top: 10px;
+   text-align: center;
+   position: fixed;
+   z-index: 4;
+   top: 30%;
+   right: 64px;
+   height: 6rem;
+   width: 6rem;
+   background: black;
+   border-radius: 50%;
+   border: 0.5rem solid white;
+}
+.round-btn{
+   height: 3.7rem;
+   width: 3.7rem;
+   border-radius: 50%;
+   border: none;
+   outline: none;
+}
+.position-top{
+   top: 47%;  
+}
+.record{
+   background-color: red;
+}
+
+
+
+
+
+
+.filter_overlay{
+   height:100vh;
+   width:100vw;
+   position: fixed;
+   left:0px;
+   top:0px;
+   /* background-color: #ffebcd73; */
+   z-index: 2;
+}
+.filter_btn-container{
+   height: 27rem;
+   width: 7rem;
+   position: fixed;
+   top: calc( (100vh - 27rem)/2);
+   left: 6vw;
+   /* background-color: red; */
+   z-index: 4;
+}
+.filter{
+   height: 20%;
+   border: 1px solid white;
+   background-blend-mode: color-burn;/* it mix bg color and background  image */
+   background-image: url("https://picsum.photos/id/870/200/300?grayscale&blur=2"); 
+   background-size: cover;   /*controls width of background image (jitni parent ki width h utni hi image ko width dega) */
+/* or  background-size: 100%; */
+}
+
+.timing{
+   color: white;
+   font-weight: 600;
+   position: fixed;
+   bottom: 5vh;
+   left: 4vw;
+   font-size: 2.7rem;
+   font-family: sans-serif;
+   display: none;
+   z-index: 6;
+}
+
+.record-animation{
+   animation: scaleUp 1s;
+   animation-iteration-count: infinite;
+}
+.capture-animation{
+   animation: scaleUp 1s;
+   animation-iteration-count: 1s;
+}
+@keyframes scaleUp{
+   0%{
+      transform: scale(1);
+   }
+   50%{
+      transform: scale(1.08);
+   }
+   100%{
+      transform: scale(1);
+   }
+   
+}
+
+
+.zoom-parent{
+   height: 7rem;
+   width: 4rem;
+   background-color: #444;
+   position: fixed;
+   z-index: 10;
+   right: 6vw;
+   top: 9vh;
+   border: 1px solid;
+   border-radius: 2px;
+   border: 1px solid white;
+}
+.zoom-parent>*{
+   color: white;
+   height: 50%;
+   border-bottom: 2px solid black;
+   text-align: center;
+   padding-top: 0.6rem;
+   border: 1px solid;
+   
+}
+.icon{
+   font-size: 180%;
+}
+
+.gallery{
+   position: fixed;
+   z-index: 10;
+   bottom: 9vh;
+   right: 5vw;
+   display: block;
+   height: 5rem;
+   width: 5rem;
+   text-decoration: none;
+   background-color: #444;
+   border-radius: 50%;
+   color: white;
+   font-size: 143%;
+   padding-top: 12px;
+   text-align: center;
+   border: 3px solid;
+}
+
+
+ @media (max-width: 930px) {
+
+   .filter_overlay{
+      height:100%;
+      width:100%;     
+      left:0px;
+      top:0px; 
+   }
+   .Heading{    
+      font-size: 4rem;   
+      height: 6rem;
+      width: 30rem;
+      padding-left: 82px;
+      padding-top: 10px;
+   }
+ }
+ @media (max-width: 875px) {
+
+
+   .btn-container{ 
+      top: 75%;
+      right: 440px;
+      height: 6rem;
+      width: 6rem;
+   }
+   .round-btn{
+      height: 3.7rem;
+      width: 3.7rem;
+   }
+   .position-top{
+      right: 300px;
+   }
+
+
+ }
+ @media (max-width: 800px) {
+   
+
+   .btn-container{ 
+      top: 65%;
+      right: 440px;
+      height: 6rem;
+      width: 6rem;
+   }
+   .round-btn{
+      height: 3.7rem;
+      width: 3.7rem;
+   }
+   .position-top{
+      right: 300px;
+   }
+   .gallery{
+      overflow: auto;
+      bottom: 14vh;
+      right: 7vw;
+      height: 5rem;
+      width: 5rem;
+   }
+ 
+ }
+ @media (max-width: 700px) {
+   /* .video-container{
+     
+      top: 15vh;
+   } */
+   .btn-container{ 
+      top: 70%;
+      left:230px;
+      height: 6rem;
+      width: 6rem;
+   }
+   .round-btn{
+      height: 3.7rem;
+      width: 3.7rem;
+   }
+   .position-top{
+      left: 350px;
+   }
+
+
+   .gallery{
+    overflow: auto;
+      bottom: 25vh;
+      right: 7vw;
+      height: 5rem;
+      width: 5rem;
+   }
+   .zoom-parent{
+      height: 7rem;
+      width: 4rem;   
+      right: 6vw;
+      top: 17vh;
+   }
+ }
+ @media (max-width: 600px) {
+
+   .btn-container{ 
+      top: 85%;
+      left:50px;
+      height: 6rem;
+      width: 6rem;
+   }
+   .round-btn{
+      height: 3.7rem;
+      width: 3.7rem;
+   }
+   .position-top{
+      left: 180px;
+   }
+   .gallery{
+    
+      bottom: 7vh;
+      right: 7vw;
+      height: 5rem;
+      width: 5rem;
+   }
+   .zoom-parent{
+      height: 8rem;
+      width: 4.5rem;   
+      right: 6vw;
+      top: 30vh;    
+   }
+   .zoom-parent>*{
+      padding-top: 1.1rem;   
+   }
+
+   .filter_btn-container{
+      height: 25rem;
+      width: 7rem;
+      top: 10vh;
+      left: 6vw;
+      
+   }
+   .timing{
+      top: 5vh;
+      left: 30vw;
+   }
+ }
+ @media (max-width: 500px) {
+ 
+   .btn-container{ 
+      top: 83%;
+      left:50px;
+      height: 6rem;
+      width: 6rem;
+   }
+   .round-btn{
+      height: 3.8rem;
+      width: 3.8rem;
+   }
+   .position-top{
+      left: 180px;
+   }
+   .gallery{
+    
+      bottom: 1vh;
+      right: 10vw;
+      height: 5rem;
+      width: 5rem;
+   }
+   .zoom-parent{
+      height: 8rem;
+      width: 4.5rem;   
+      right: 6vw;
+      top: 20vh; 
+   }
+   .zoom-parent>*{
+      padding-top: 1.3rem;   
+   }
+   .filter_btn-container{
+      height: 4.5rem;
+      width: 20rem;
+      top: 2vh;
+      left: 2vw;
+      display: flex;
+      flex-direction: row;
+   }
+   .filter {
+      height: 100%;
+      width: calc(100% / 5);
+    }
+    .timing{
+      top: 70vh;
+      left: 10vw;
+   }
+   .Heading{    
+      font-size: 4rem;
+      height: 6rem;
+      width: 21rem;
+      padding-left: 9px;
+      padding-top: 10px;
+   }
+   .gallery-img-container,
+   .gallery-vid-container {
+     width: 20rem;  
+     height: 20rem;
+     padding: 2rem;
+     margin: 2rem; 
+     overflow: auto; 
+   }
+ }
+ @media (max-width: 400px) {
+   
+  
+   .btn-container{ 
+      top: 83%;
+      left:50px;
+      height: 6rem;
+      width: 6rem;
+   }
+   .round-btn{
+      height: 3.8rem;
+      width: 3.8rem;
+   }
+   .position-top{
+      left: 180px;
+   }
+   .gallery{
+    
+      bottom: 20vh;
+      right: 32vw;
+      height: 5rem;
+      width: 5rem;
+   }
+   .zoom-parent{
+      height: 4rem;
+      width: 2.5rem;   
+      right: 6vw;
+      top: 18vh; 
+      
+   }
+   .zoom-parent>*{
+      padding-top: 0rem;   
+   }
+   .filter_btn-container{
+      height: 4rem;
+      width: 15rem;
+      top: 2vh;
+      left: 2vw;
+      display: flex;
+      flex-direction: row;
+   }
+   .filter {
+      height: 100%;
+      width: calc(100% / 5);
+    }
+    .timing{
+      top: 75vh;
+      left: 5vw;
+      font-size: 1rem;
+   }
+   .Heading{    
+      font-size: 4rem;
+      height: 6rem;
+      width: 21rem;
+      padding-left: 9px;
+      padding-top: 10px;
+   }
+   .gallery-img-container,
+   .gallery-vid-container {
+     width: 20rem;  
+     height: 20rem;
+     padding: 2rem;
+     margin: 2rem; 
+     overflow: auto; 
+   }
+ }
+ @media (max-width: 300px) {
+  
+   .gallery{
+    
+      bottom: 15vh;
+      right: 32vw;
+      height: 5rem;
+      width: 5rem;
+   }
+ }
