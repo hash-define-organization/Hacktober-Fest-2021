@@ -1,0 +1,22 @@
+Data Structures and Algorithms in Java [Level 1 - Foundation]
+Data Structures and Algorithms in Java [Level 2 - LevelUp]
+Data Structures and Algorithms in Java [Level 3 - Interview Prep]
+Web Dev using ReactJS and NodeJS
+Python And Machine Learning
+Gaming and Augmented Reality
+Mobile App Development
+
+Basics of Programming
+1  Getting Started2  JAVA for C++ Coders3  Patterns4  Function and Arrays5  2D Arrays6  String, String Builder and ArrayList
+Recursion and  Backtracking
+1  Introduction to Recursion2  Recursion in Arrays3  Recursion with Arraylists4  Recursion on the way up5  Recursion Backtracking
+Dynamic Programming
+1  Time and Space Complexity2  Dynamic Programming and Greedy
+OOPS
+1  OOPS
+Basic Data Structures
+1  Stacks and Queues2  Linked Lists3  Generic Tree4  Binary Tree5  Binary Search Tree
+Advanced Data Structure
+1  Hashmap And Heap2  Graphs
+Miscellaneous
+1  JAVA for C++ Coders1Introduction To Functions2Introduction To Functions3Digit Frequency4Digit Frequency5Introduction To Number System6Number System - Mcq7Decimal To Any Base8Decimal To Any Base9Any Base To Decimal10Any Base To Decimal11Any Base To Any Base12Any Base To Any Base13Any Base Addition14Any Base Addition15Any Base Subtraction16Any Base Subtraction17Any Base Multiplication18Any Base Multiplication19Introduction To Arrays20Introduction To Arrays21Arrays - Memory Management22Arrays - Memory Management23Span Of An Array24Span Of Array25Find Element In An Array26Find Element In An Array27Bar Chart28Bar Chart29Sum Of Two Arrays30Sum Of Two Arrays31Difference Of Two Arrays32Difference Of Two Arrays33Reverse An Array34Reverse An Array35Rotate An Array36Rotate An Array37Inverse Of An Array38Inverse Of An Array39Sub Arrays Of An Array40Subarray Problem41Binary Search42Binary Search43Broken Economy44Broken Economy45First And Last Index46First Index And Last Index47Subsets Of Array48Subsets Of Array49Inverted Bar Chart
