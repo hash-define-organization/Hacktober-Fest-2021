@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon 2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="bg-gray-200 w-full">
+        <div class="header h-16 bg-gray-900 flex items-center">
+            <div class="logo h-16 w-1/5 ml-9">
+                <img class="w-28 h-16 object-contain"
+                    src="https://www.vhv.rs/dpng/f/453-4533095_soundcloud-logo-png-transparent-background.png" alt="">
+            </div>
+            <input
+                class="p-3 h-9 bg-gray-800 border border-gray-500 border-opacity-75 rounded-l-xl px=3 text-white ml=6 focus:outline-none placeholder-white"
+                id="search" type="text" placeholder="Search...">
+            <div
+                class="categories h-9 w-30 bg-gray-800 border border-gray-500 border-opacity-75 px-3 text-white flex items-center">
+                Categories
+                <svg class="h-4 w-4 ml-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </div>
+            <div class="search-icon bg-yellow-500 h-9 w-10 flex rounded-r-xl items-center justify-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+            <!--right icons of cart etc..-->
+            <div class="icons text-white flex items-center ml-auto mr-8 w-48 h-16 justify-around mx-auto">
+                <!-- <div class="first">
+                    <span class="mx-3 text-yellow-500 font-bold ">Returns</span>
+                    <span class="text-yellow-500 font-bold">& Orders</span>
+                </div> -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-10 " fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                <div class="relative cart icon bg-yellow-500 rounded-xl h-10 w-15 flex justify-center items-center m-1.5">
+                    <div
+                            class="cart-item-number text-gray-800 text-xs absolute -top-1 -right-1 h-4 w-4 bg-white rounded-full flex justify-center items-center">
+                            1</div>
+                    <svg class="h-6 w-5 text-gray-600 mx-2 " xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-11 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                </svg>
+
+
+            </div>
+
+
+        </div>
+        <div class="main h-screen flex">
+            <div class="main-sidebar w-1/5 border-gray-700 bg-gray-900 border-t-2 p-4">
+                <div class="sidebar-categories">
+                    <div class=" mb-4 p-2 sidebar-main-categories font-bold text-yellow-500 cursor-pointer flex">
+                        <span class="w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            </svg>
+                        </span>
+                        <span>Categories</span>
+                    </div>
+                    <div
+                        class="sidebar-main-category text-white font-bold cursor-pointer flex mb-2 p-2 hover:bg-gray-700">
+                        <span class="w-8">
+                            <i class="fas fa-robot"></i>
+                        </span>
+                        <span>Echo and Alexa</span>
+
+
+                    </div>
+                    <div
+                        class="sidebar-main-category text-white font-bold cursor-pointer flex mb-2 p-2 hover:bg-gray-700">
+                        <span class="w-8">
+                            <i class="fas fa-book-reader"></i>
+                        </span>
+                        <span>Kindle</span>
+
+
+                    </div>
+                    <div
+                        class="sidebar-main-category text-white font-bold cursor-pointer flex mb-2 p-2 hover:bg-gray-700">
+                        <span class="w-8">
+                            <i class="fas fa-book"></i>
+                        </span>
+                        <span>Books</span>
+
+
+                    </div>
+                    <div
+                        class="sidebar-main-category text-white font-bold cursor-pointer flex mb-2 p-2 hover:bg-gray-700">
+                        <span class="w-8">
+                            <i class="fas fa-mobile-alt"></i>
+                        </span>
+                        <span>Electronics</span>
+
+
+                    </div>
+                    <div
+                        class="sidebar-main-category text-white font-bold cursor-pointer flex mb-2 p-2 hover:bg-gray-700">
+                        <span class="w-8">
+                            <i class="fas fa-seedling"></i>
+                        </span>
+                        <span>Home and Garden</span>
+
+
+                    </div>
+                    <div
+                        class="sidebar-main-category text-white font-bold cursor-pointer flex mb-2 p-2 hover:bg-gray-700">
+                        <span class="w-8">
+                            <i class="fas fa-tshirt"></i>
+                        </span>
+                        <span>Fashion</span>
+
+
+                    </div>
+                    <div
+                        class="sidebar-main-category text-white font-bold cursor-pointer flex mb-2 p-2 hover:bg-gray-700">
+                        <span class="w-8">
+                            <i class="fas fa-percentage"></i>
+                        </span>
+
+                        <span>Sell on Amazon</span>
+
+
+                    </div>
+                    <div
+                        class="sidebar-main-category text-white font-bold cursor-pointer flex mb-2 p-2 hover:bg-gray-700">
+                        <span class="w-8">
+                            <i class="far fa-question-circle"></i>
+                        </span>
+                        <span>Help</span>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="main section flex-1 p-6 bg-gray-200">
+                <h1 class="font-bold text-gray-400 text-3xl mb-6 ">Shopping Cart</h1>
+                <div class="titles font-bold text-gray-400 flex">
+                    <h2 class="flex-grow ">Product</h2>
+                    <h2 class="w-48">Count</h2>
+                    <h2 class="w-48">Total Cost</h2>
+                </div>
+                <div class="cart-items mt-5">
+                    <div class="cart-item flex items-center pb-4 border-b border-gray-100">
+                        <div class="cart-item-image w-40 h-24 bg-white p-4 rounded-lg">
+                            <img class="w-full h-full object-contain"
+                                src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1605825742-instax-mini-11-1605825735.jpg?crop=1xw:1xh;center,top&resize=480:*">
+                        </div>
+                        <div class="cart-item-detail flex-grow">
+                            <div class="cart-item-title font-bold text-sm text-gray-600">
+                                Polaroid Camera (Blue)
+                            </div>
+                            <div class="cart-item-brand text-sm text-gray-400">
+                                Sony
+                            </div>
+                        </div>
+                        <div class="cart-item-counter w-48 flex items-center">
+                            <div
+                                class="chevron-left cursor pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-gray-300 mr-2">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <h4 class="text-gray-400">x1</h4>
+                            <div
+                                class="chevron-right cursor pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-gray-300 ml-2">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-total-cost w-48 font-bold text-gray-400">
+                            $99.99
+                        </div>
+                        <div class="cart-item-delete w-10 font-bold text-gray-300 cursor-pointer hover:text-gray-400">
+                            <i class="fas fa-times"></i>
+                        </div>
+
+                </div>
+                <div class="cart-items mt-5">
+                    <div class="cart-item flex items-center pb-4 border-b border-gray-100">
+                        <div class="cart-item-image w-40 h-24 bg-white p-4 rounded-lg">
+                            <img class="w-full h-full object-contain"
+                                src="https://m.media-amazon.com/images/I/61hr5HjjbCL._SL1400_.jpg">
+                        </div>
+                        <div class="cart-item-detail flex-grow">
+                            <div class="cart-item-title font-bold text-sm text-gray-600">
+                                Jabra Elite 75t Earbuds
+                            </div>
+                            <div class="cart-item-brand text-sm text-gray-400">
+                                Jabra
+                            </div>
+                        </div>
+                        <div class="cart-item-counter w-48 flex items-center">
+                            <div
+                                class="chevron-left cursor pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-gray-300 mr-2">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <h4 class="text-gray-400">x1</h4>
+                            <div
+                                class="chevron-right cursor pointer text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center hover:bg-gray-300 ml-2">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-total-cost w-48 font-bold text-gray-400">
+                            $50.00
+                        </div>
+                        <div class="cart-item-delete w-10 font-bold text-gray-300 cursor-pointer hover:text-gray-400">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-end mt-10">
+                    <div class="total-cost mr-7">
+                        <h2 class="text-gray-400">Total Cost</h2>
+                        <div class=" font-bold text-gray-600 total-cost-number text-3xl">
+                            $149.99
+                        </div>
+                        
+                    </div>
+                    <div class=" cursor-pointer hover:bg-yellow-600 bg-yellow-400 flex items-center justify-center rounded-lg text-white w-56 h-">
+                        Complete Order
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

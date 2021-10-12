@@ -1,0 +1,231 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.ss {
+    position: absolute;
+    left: 151px;
+    top: 99px;
+}
+
+.samplePhone {
+    position: relative;
+    margin: 23.5px 0px 30px -40px;
+    height: 400px;
+    width: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    padding-top: 30px;
+    padding-left: 75px;
+    height: 60px;
+}
+
+.loginBox {
+    border-color: black;
+    height: 380px;
+    width: 345px;
+    margin-top: 56px;
+    margin-left: -15px;
+    border-width: 2px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inputs {
+    width: 267px;
+    height: 37px;
+
+    margin-left: 40px;
+    border:solid rgb(212, 212, 212);
+    border-width: 1px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.inputs:focus
+{
+    outline: none;
+}
+
+#username {
+    margin-top: 30px;
+}
+
+#password {
+    margin-top: 6px;
+}
+
+#login {
+    height: 30px;
+    background-color: #0095f6;
+    border-radius: 6px;
+    border-width: 0;
+    color: white;
+    font-weight: 600;
+}
+
+#loginLink
+{
+    text-decoration: none;
+    color: white;
+}
+
+.orrule {
+    width: 100px;
+    opacity: 40%;
+}
+
+#hr1 {
+    margin-left: 40px;
+}
+
+#hr2 {
+    margin-left: 20px;
+}
+
+.orclass {
+    display: flex;
+    flex-direction: row;
+    margin-top: 14px;
+}
+
+#or {
+    margin-left: -15px;
+    font-size: 12px;
+    opacity: 50%;
+    font-weight: 700;
+    display: inline;
+}
+
+#facebook {
+    margin-top: 100px;
+    text-decoration: none;
+    border: none;
+    height: 40px;
+}
+
+#facebookLogo {
+    margin-left: 60px;
+    padding-top: 20px;
+    margin-top: 12px;
+    margin-right: 10px;
+    height: 15px;
+}
+
+#facebookText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #385185;
+    text-align: center;
+    padding-right: 50px;
+    height: 50px;
+}
+
+.forgot {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#forgot {
+    font-size: 12px;
+    color: black;
+    opacity: 90%;
+    text-decoration: none;
+}
+
+.secondBox {
+    text-decoration: none;
+    height: 50px;
+    border: black;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.loginBox {
+    font-size: 13px;
+}
+
+.signup {
+    text-decoration: none;
+    color: rgb(70, 140, 245);
+    font-weight: bold;
+}
+
+.getapp {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    font-size: 13.5px;
+}
+
+.downloadImage {
+    height: 40px;
+}
+
+.downloadButton {
+    background: none;
+    padding: 0;
+    border: none;
+    margin-top: 10px;
+}
+
+#download1 {
+    margin-left: 21px;
+}
+
+#download2 {
+    margin-left: 4px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: -30px;
+    color: grey;
+    opacity: 80%;
+    font-size: 11.5px;
+}
+
+.row1 {
+    margin-top: 80px;
+}
+
+ul {
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    color: grey;
+
+    margin: 0 9px;
+}
+
+.footerLink {
+    text-decoration: none;
+}
+
+.row2 {
+    margin-top: -15px;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 38px;
+    margin-top: -5px;
+    margin-left: 20px;
+}
+
+.row3 p:first-child {
+    padding-right: 35px;
+}
