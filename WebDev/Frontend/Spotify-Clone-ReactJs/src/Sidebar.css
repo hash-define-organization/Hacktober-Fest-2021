@@ -1,0 +1,27 @@
+.sidebar{
+    height: 100vh;
+    flex:0.15;
+    color: #fff;
+    /* min-width: 230px; */
+    background-color: #040404;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 18px;
+}
+.Sidebar-Logo{
+    height: 39px;
+    padding: 10px;
+    padding-bottom: 15px;
+    margin-right: auto;
+    margin-left: 5px;
+    
+}
+.sidebar-title{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+/* .MdHomeFilled{
+    color: #040404;
+    background: #fff;
+} */
