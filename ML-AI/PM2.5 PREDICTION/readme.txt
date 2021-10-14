@@ -1,3 +1,3 @@
-Link for deployed model -  
-                         
-[https://ml-tweek.herokuapp.com]
+Link for website -  
+                             
+https://ml-tweek.herokuapp.com
