@@ -1,3 +1,3 @@
 Link for website -  
                              
-Click [here](https://ml-tweek.herokuapp.com)
+Click https://ml-tweek.herokuapp.com
