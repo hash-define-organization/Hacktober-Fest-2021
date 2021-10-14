@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GENERATE RESUME</title>
+	<link rel="stylesheet" href="cv.html">
+s
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding:0px; 
+		}
+		#container1{
+			width: 90%;
+			height: 100%;
+			
+		}
+		#container2{
+			display: none;
+		}
+		.row{
+			width: 100%;
+			display: flex;
+
+		}
+		.col1{
+			line-height: 30px;
+			margin-left: 8px;
+			width:50%;
+		}
+		.col1 h1{
+           text-align: center;
+		}
+		.col1 input{
+            width: 40%;
+            height: 30px;
+            border-radius: 30px;
+		}
+	
+		.col2{
+			width:50%;
+			
+			line-height: 30px;
+		}
+		.col2 h1{
+			text-align: center;
+		}
+		.col2 input{
+			text-align: center;
+			 width: 40%;
+            height: 30px;
+            border-radius: 15px;
+		}
+	
+		.btn{
+			text-align: center;
+			background-color: grey;
+			}
+	
+		.gc{
+		  text-align: center;
+		  padding-top: 25px;
+		}
+		.container2{
+			padding-left: 10px;
+			padding-top: 25px;
+		}
+		.col3{
+			width: 30%;
+			background-color: aqua;
+		}
+		.col3 img{
+		   padding-top: 30px;
+		   padding-left: 65px;
+		}
+		.cvt{
+			padding-left: 10px;
+			line-height: 30px;
+		}
+		.col4{
+			padding-left: 100px;
+		}
+		.col4 h1{
+			padding-left:30px;
+			padding-top: 10px;
+		}
+		.card-header h3{
+			background-color: aqua;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<!-- cv demo -->
+  <div id="container1">
+  	<div class="row">
+  		<div class="col1">
+  			<h1>Personal Details</h1>
+  			<h4>Name</h4>
+  			<input type="name" name="" id="NameField">
+  			<h4>Father's Name</h4>
+  			<input type="name" name=""id="FNameField">
+  			<h4>Email Id</h4>
+  			<input type="name" name=""  id="EmailField">
+  			<h4 >Phone no.</h4>
+  			<input type="name" name=""id="PhoneField">
+  			<h4 >whatsapp no</h4>
+  			<input type="name" name=""id="WField">
+  			<h4>College Name</h4>
+  			<input type="name" name="" id="CNField">
+  		</div>
+  		<div class="col2">
+  			<h1>Professional Detail</h1>
+  			<h4>Objective</h4>
+  			<input type="name" name="" id="obField">
+  			<h4>Address</h4>
+  			<input type="textarea" name="" id="AddressField">
+  			<h4>SSC Percentage</h4>
+  			<input type="name" name="" id="SSCField">
+  			<h4>HSC Percentage</h4>
+  			<input type="name" name="" id="HSCField">
+  			<h4>Graduation Percentage</h4>
+  			<input type="name" name="" id="GPField">
+  			<h4>LinkedIn Profile</h4>
+  			<input type="name" name="" id="LPField">
+  			<h4>Hobbies</h4>
+  			<textarea id="AP" 
+  			placeholder="enter hobbies like this:-playing,reading,gaming">
+  				
+  			</textarea>
+  		</div>
+
+s
+  	
+</div>
+<div class="gc">
+  <button onclick="GenerateCv()">Generate Cv</button>
+</div>
+  </div>
+
+
+  <!-- cv template -->
+
+
+  <div id="container2">
+  	<div class="row">
+  		<div class="col3">
+
+  			<img src="https://tse1.mm.bing.net/th?id=OIP.qM6Kb9CWbwqInwp_XyDpHwHaIa&pid=Api&rs=1&c=1&qlt=95&w=101&h=115">
+  			<div class="cvt">
+  				<h2>Personal Details</h2>
+  				<hr/>
+  				<p id="NameT1">Shobhit Gupta</p>
+  				<p id="FNameT">Mr.Omprakash Gupta</p>
+  				<p id="EmailT">guptashobhit@gmail.com</p>
+  				<p id="PhoneT"> 9462096527</p>
+  				<p id="WhatsappT"> 9828354989</p>
+  				<p id="CNT">Bhagwan Parshuram INstitute Of technology</p>
+
+  			</div>
+  		</div>
+  		<div class="col4">
+  		<h1 id="NameT2">Shobhit Gupta</h1>
+  		<div class="card">
+  			<div class="card-header">
+  				<h3>Objective</h3>
+  			</div>
+  			<div class="card-body">
+  				<p id="obt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  			</div>
+  			
+  		</div>
+  		<hr/>
+
+  		<div class="card">
+  			<div class="card-header">
+  				<h3>Address</h3>
+  			</div>
+  			<div class="card-body">
+  				<p id="AddressT">Near power house delhi road tijara</p>
+  			</div>
+  			
+  		</div>
+  		<hr/>
+  		<div class="card">
+  			<div class="card-header">
+  				<h3>SSC Percentage</h3>
+  			</div>
+  			<div class="card-body">
+  				<p id="SSCT">My 10th percentage is 93.17%</p>
+  			</div>
+  			
+  		</div>
+  		<hr/>
+  		<div class="card">
+  			<div class="card-header">
+  				<h3>HSC Percentage</h3>
+  			</div>
+  			<div class="card-body">
+  				<p id="HSCT">My 12th percentage is 91.40%</p>
+  			</div>
+  			
+  		</div>
+  		<hr/>
+  		<div class="card">
+  			<div class="card-header">
+  				<h3>Graduation Percentage</h3>
+  			</div>
+  			<div class="card-body">
+  				<p id="GPT">My Graduation percentage is 90.00%</p>
+  			</div>
+  			
+  		</div>
+  		<hr/>
+  		<div class="card">
+  			<div class="card-header">
+  				<h3>LinkedIN Profile</h3>
+  			</div>
+  			<div class="card-body">
+  				<p id="LPT">WWW.linkedin543786.com</p>
+  			</div>
+  			
+  		</div>
+  		<hr/>
+
+  		<div class="card">
+  			<div class="card-header">
+  				<h3>Hobbies</h3>
+  			</div>
+  			<div class="card-body">
+  				<p id="APT">WWW.linkedin543786.com</p>
+  			</div>
+  			
+  		</div>
+  		<hr/>
+  		</div>
+  	</div>
+  </div>
+ 
+  
+</body>
+</html>
