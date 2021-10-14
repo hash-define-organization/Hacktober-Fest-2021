@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASk Question</title>
+    <style>
+        h2 {
+            color:yellow;
+            text-align: center;
+        }
+
+        h2:hover {
+            color: green;
+        }
+    </style>
+</head>
+
+<body bgcolor="rgb(79, 189, 116)">
+    <img style="border-style:solid;border-color: rgb(24, 23, 23);width:100%;margin:3px;" height="200"
+        src="https://www.static-contents.youth4work.com/university/Documents/Colleges/CollegeBanner/dacb900f-147e-4a06-b860-7ab861e950a8.png"
+        alt="image">
+
+
+    {% if ans.SolvedBy.First_name %}
+    <h2><span style="color:white;text-shadow:5px 5px 5px rgb(22, 179, 43);font-size:75px">{{ans.SolvedBy.First_name|title}}
+            {{ans.SolvedBy.Last_name|title}}</span></h2>
+    <h2>{{ans.SolvedBy.Ans|title}}</h2>
+
+    {% endif %}
+</body>
+
+</html>

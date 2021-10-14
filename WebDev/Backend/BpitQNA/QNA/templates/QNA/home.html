@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        .ans {
+            background-color: aqua;
+        }
+
+        .ans:hover {
+            background-color: rgb(240, 241, 213);
+        }
+
+        .noans {
+            background-color: rgb(79, 189, 116);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: purple;
+        }
+        h2{
+            color:rgb(240, 235, 235);
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body bgcolor="rgb(79, 189, 116)">
+    <img style="border-style:solid;border-color: rgb(24, 23, 23);width:100%;margin:1px;border-radius: 0%;" height="200"
+        src="https://www.static-contents.youth4work.com/university/Documents/Colleges/CollegeBanner/dacb900f-147e-4a06-b860-7ab861e950a8.png"
+        alt="image">
+    <h2><a href="/AskQuestion"><u>Ask Your Question..</u></a></h2>
+
+    <h1 style="font-size:60px"> All Questions..</h1>
+
+    {% for Question in Questions|slice:"::-1" %}
+    {% if Question.SolvedBy %}
+
+
+    <div class="ans" style="border: 2px outset rgb(218, 56, 91);border-radius:20px; ">
+        <a href="{% url 'specificans' Question.id %}">
+            <h3 style="margin-left:10px;font-size:30px">{{Question.Title|title}}</h3>
+        </a>
+        <h3 style="margin-left:10px;font-size:25px">{{Question.Message|title}}</h3>
+    </div><br>
+
+
+    {% else %}
+    <div class="noans" style="border: 2px outset rgb(187, 47, 82);border-radius:20px ">
+        <a href="{% url 'specificans' Question.id %}">
+            <h3 style="margin-left:10px;font-size:30px">{{Question.Title|title}}</h3>
+        </a>
+        <h3 style="margin-left:10px;font-size:25px">{{Question.Message|title}}</h3>
+    </div><br>
+    {% endif %}
+
+    {% endfor %}
+
+
+    </div>
+</body>
+
+</html>
