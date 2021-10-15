@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age Calculator</title>
+	<style type="text/css">
+		body{
+			background-image: url(https://tse2.mm.bing.net/th?id=OIP.gtsIgmxx2p7PC9-LT7OiMAHaF6&pid=Api&P=0&w=193&h=155);
+		}
+		
+		
+		.container{
+			text-align: center;
+			height: 300px;
+			width: 50%;
+			border:2px solid black;
+			margin-left: 300px;
+			padding-top: 40px; 
+			background: aqua;
+			color: white;
+			margin-top: 80px;
+			opacity: 1;
+		
+			
+		}
+
+
+		#DateField{
+			border-radius: 20px;
+			font-size: 18px;
+			margin:6px;
+			text-align: center;
+			
+			
+
+		}
+		#MonthField{
+			border-radius: 20px;
+			font-size: 18px;
+			margin:6px;
+			text-align: center;
+			width: 40%;
+		
+
+		}
+		#YearField{
+			border-radius: 20px;
+			font-size: 18px;
+			margin:6px;
+			text-align: center;
+		
+
+		}
+		button{
+			font-size: 20px;
+			margin: 4px;
+			color: black;
+		}
+		button:hover{
+			background-color: blue;
+		}
+
+	
+
+		@media(max-width: 800px){
+			.container{
+				text-align: center;
+			height: 300px;
+			width: 70%;
+			border:2px solid black;
+			
+		 
+			background: aqua;
+			color: white;
+		    position: absolute;
+		    top: 30px;
+		    left: 5px;
+		    right: 5px;
+		   
+		   
+			opacity: 1;
+		
+			}
+		}
+		@media (max-width: 800px){
+			#DateField{
+			border-radius: 10px;
+			font-size: 15px;
+			margin:2px;
+			text-align: center;
+			}
+		}
+		@media (max-width: 800px){
+			#MonthField{
+			border-radius: 10px;
+			font-size: 15px;
+			margin:2px;
+			text-align: center;
+			width: 20%;
+		}
+		}
+		@media (max-width: 600px){
+			#YearField{
+			border-radius: 10px;
+			font-size: 15px;
+			margin:2px;
+			text-align: center;
+		
+
+		}
+		}
+		@media (max-width: 600px){
+			button{
+			font-size: 20px;
+			margin: 3px;
+			color: black;
+		}
+		button:hover{
+			background-color: blue;
+		}
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<h1>Age Calculator</h1>
+	<p>"You calculate your age in days" </p>
+	<div class="row">
+		<div class="col1">
+			<input type="name" name="" placeholder="Date" id="DateField">
+		</div>
+		<div class="col2">
+			<select id="MonthField" placeholder="Month">
+				<option value="January">Jan</option>
+				<option value="February">Feb</option>
+				<option value="March">Mar</option>
+				<option value="April">April</option>
+				<option value="May">May</option>
+				<option value="June">june</option>
+				<option value="July">July</option>
+				<option value="August">August</option>
+				<option value="September">September</option>
+				<option value="Octomber">Oct.</option>
+				<option value="November">Nov</option>
+				<option value="December">Dec.</option>
+		
+
+			</select>
+			
+			
+		</div>
+		<div class="col3">
+			<input type="name" name="" placeholder="Year" id="YearField">
+		</div>
+
+		
+	</div>
+	<div class="btn">
+	<button onclick="CalculateAge()">Calculate Age</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+	function CalculateAge(){
+		
+	const Dateob=document.getElementById("DateField").value;
+	const Monthob=document.getElementById("MonthField").value;
+	const Yearob=document.getElementById("YearField").value;
+
+	let dob=new Date(`${ Dateob} ${Monthob} ${ Yearob}`);
+    let now=new Date();
+    let diff=now-dob;
+     console.log(diff);
+    
+    let Year=Math.floor(diff/(1000*60*60*24));
+   
+    
+    alert(`you are ${Year} days old.`);
+	}
+</script>
+</body>
+</html>
