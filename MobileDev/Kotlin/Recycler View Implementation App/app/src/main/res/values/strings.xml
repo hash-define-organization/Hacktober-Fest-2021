@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Doggler</string>
+    <string name="name1">Tzietel</string>
+    <string name="name2">Leroy</string>
+    <string name="name3">Frankie</string>
+    <string name="name4">Nox</string>
+    <string name="name5">Bella</string>
+    <string name="name6">Faye</string>
+    <string name="age1">Age: 9</string>
+    <string name="age2">Age: 6</string>
+    <string name="age3">Age: 8</string>
+    <string name="age4">Age: 5</string>
+    <string name="age5">Age: 6</string>
+    <string name="age6">Age: 7</string>
+    <string name="Hobby1">Hobbies: sunbathing</string>
+    <string name="Hobby2">Hobbies: sleeping in dangerous places</string>
+    <string name="Hobby3">Hobbies: stealing socks</string>
+    <string name="Hobby4">Hobbies: meeting new animals</string>
+    <string name="Hobby5">Hobbies: digging up holes</string>
+    <string name="Hobby6">Hobbies: barking at strangers</string>
+</resources>
