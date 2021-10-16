@@ -1,17 +1,18 @@
 package com.jay.practice;
 
 public class orderAgnostic {
+	//Finding the Order of then array and ten after find Target Element
 	public static void main(String[] args) {
 		
-	
-		// TODO Auto-generated method stub
-		int arr[] = {12,11,9,8,7,6,5,4,3,2,1};
-		int target = 12;
+		int arr[] = {12,11,9,8,7,6,5,4,3,2,1}; // Sorted Array
+		int target = 12;// Target Element
 		System.out.println(orderAgnosticBS(arr, target));
 
 	}
 	
+	//Created Function for finding orer of array
 	static int orderAgnosticBS(int arr[], int tar) {
+		// Required Start Posinter And Ending Pointer
 		int start = 0;
 		int end = arr.length-1;
 		
