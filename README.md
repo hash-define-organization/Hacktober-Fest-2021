@@ -1,7 +1,7 @@
 <h1 align="center">	&#127875;<b><i>It's October, so is Hacktoberfest</i></b>	&#127875; </h1>
 
 <h1 align="center">
-  <a><img src="./readmeSrc/circle_cropped.png" alt="define" width="200"></a>
+  <a><img src="./resources/circle_cropped.png" alt="define" width="200"></a>
    <br>
    #define
    <br>
