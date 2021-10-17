@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Pacifico&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+ nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+   
+    align-items: center; 
+}
+.logo img{
+   width:10vw;
+   padding:5px 10px;
+
+}  
+
+footer{
+    background-color: #2874f0;
+    height: 10vh;
+    color:white ;
+    font-family: 'Arvo', serif;
+} 
+ header nav{
+    background-color: #2874f0;
+    height: 10vh;
+    
+    
+}
+header nav ul li a{
+    
+     text-decoration:none ;
+     padding:0px 23px  ; 
+     
+    
+     color: white; 
+     font-family:'Arvo', serif; 
+     
+}
+header nav ul{
+
+display: flex;
+justify-content: flex-start;
+align-items: center;
+height:8vh;
+margin-top:5px ;
+} 
+
+header nav ul li a:hover{
+    
+    font-weight:bolder ;
+}
+input{
+    width:25vw;
+    height:4vh ;
+    border-radius:5px ;
+    margin:0px 15px 0px 50px;
+    padding: 0px 8px  ;
+}
+.search{
+   display: flex;
+align-items:center ;
+}
+.progress{
+    background-color: #d81b1b;
+    height:3px ;
+    animation:jaya 1s ease-in-out   ;
+    
+}
+@keyframes jaya{
+    0%{
+        width:1vw ;
+
+    }
+    50%{
+        width: 50vw;
+    
+     }
+     100%{
+         width: 100vw;
+     }
+
+}
+.btn{
+    color: white;
+    border:solid 2px white;
+    padding:3px 10px;
+    border-radius:7px ;
+    background-color: #2874f0;
+    cursor:pointer ;
+    font-family:'Arvo', serif ;
+    font-weight: bolder;
+}   
+ .slider img{
+width:95vw;
+height:60vh ;
+
+margin:20px  ;
+}
+.block{
+    display:flex;
+    justify-content: center;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+}
+.text{
+    font-family: 'Arvo', serif;
+    font-weight: bolder;
+    margin-left:25px;
+    margin-top:30px ; 
+}
+.item{
+    margin: 10px 50px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.quality .centre{
+    text-align: center;
+    font-size:15px ;
+    font-family:'Arvo', serif ;
+    
+}
+@media screen and (max-width:900px){
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.slider img{
+    width:90vw;
+    /* height:60vh ; */
+    height:30vh ;
+
+    
+    margin-top:50px  ;
+    }
+    .logo{
+        display: flex;
+       justify-content: center;
+       align-items: center;
+      margin-top:10px ; 
+      
+      
+       
+        
+    } 
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        
+    
+    }
+    .search{
+        display: flex;
+     justify-content:center  ;
+     align-items: center;
+     padding-right:40px;
+     }
+     header nav{
+        
+        height: 20vh;
+        
+        
+    }
+    
+    
+    
+}

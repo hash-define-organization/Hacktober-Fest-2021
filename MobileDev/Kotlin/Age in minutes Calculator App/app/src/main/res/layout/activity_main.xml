@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text= "@string/age_calc"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/age_back"
+        android:padding="10dp"
+        android:text="@string/age"
+        android:textAlignment="center"
+        android:textColor="@color/age_txt"
+        android:textColorHint="@color/age_txt"
+        android:textColorLink="@color/age_txt"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/age_min"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/bttnDatepikr"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_date_button"
+        android:textColor="@color/age_txt"/>
+    <TextView
+        android:id="@+id/dateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/selDate"
+        android:textAlignment="center"
+        android:textColor="@color/lightgreyText"/>
+    <TextView
+        android:id="@+id/ageDisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/age_in_min"
+        android:textAlignment="center"
+        android:textColor="@color/lightgreyText" />
+</LinearLayout>

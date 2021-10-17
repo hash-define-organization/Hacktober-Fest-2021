@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASk Question</title>
+    <style>
+        .container {
+            border-radius: 25px;
+            position: absolute;
+            left: 37%;
+            height: 470px;
+            width: 500px;
+            border: 5px solid black;
+            background-color: gray;
+        }
+
+        .container h2 {
+            margin: 9px;
+        }
+
+        input[type=text],
+        select {
+            background-color: rgb(235, 151, 151);
+            border-radius: 25px;
+            width: 90%;
+            margin: 7px;
+            padding: 12px;
+        }
+
+        .z {
+            width: 80%;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .a {
+            border-radius: 25px;
+            width: 95%;
+            margin: 5px;
+            margin-bottom: 1px;
+            padding: 12px;
+            background-color: green;
+        }
+
+        .a:hover {
+            background-color: rgb(200, 209, 72);
+
+        }
+
+        .z {
+            background-color: rgb(235, 151, 151);
+            border-radius: 25px;
+            width: 90%;
+            margin: 5px;
+            padding: 12px;
+        }
+
+        h1 {
+            color:white;
+            text-align: center;
+        }
+
+        h1:hover {
+            color: purple;
+        }
+
+        .oye {
+            position: absolute;
+            left: 40px;
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body bgcolor="rgb(79, 189, 116)">
+    <img style="border-style:solid;border-color: rgb(24, 23, 23);width:100%;margin:3px;" height="200"
+        src="https://www.static-contents.youth4work.com/university/Documents/Colleges/CollegeBanner/dacb900f-147e-4a06-b860-7ab861e950a8.png"
+        alt="image">
+    <h1 style="font-size:60px">Give Answer..</h1>
+    {% comment %} <img src="https://c.tenor.com/dJfugj3uAwEAAAAj/love-cute.gif" class="oye"> {% endcomment %}
+
+    <form action="{% url 'answerhai' ans.id %}" method="POST" onsubmit="return validate()">
+        {% csrf_token %}
+        <div class="container">
+            <label for="title" class="x">
+                <h2>First Name</h2>
+            </label>
+            <input id="title" name="first" type="text" class="y"><br>
+
+            <label for="title" class="x">
+                <h2>Last Name</h2>
+            </label>
+            <input id="title" name="last" type="text"><br>
+
+            <label for="question" class="x">
+                <h2>Answer</h2>
+            </label>
+            <textarea id="question" name="ans" rows="6" cols="30" class="z"></textarea>
+
+            <button type="submit" class="a">
+                <h2>Create</h2>
+            </button>
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e67e22</color>
+    <color name="colorPrimaryDark">#d35400</color>
+    <color name="textColor">#d63031</color>
+    <color name="colorBackground">#ffeaa7</color>
+    <color name="age_back">#8e44ad</color>
+    <color name="age_txt">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="lightgreyText">#444444</color>>
+</resources>
