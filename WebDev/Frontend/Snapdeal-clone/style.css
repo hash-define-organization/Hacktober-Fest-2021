@@ -1,0 +1,262 @@
+*{ margin:0px; 
+   padding:0px; }
+
+.toppest{ color:white;
+          background-color:maroon;
+          height: 30px;
+          line-height:30px;
+          margin:0px; }
+
+.toppest .left{ width:50%;
+                height:30px;
+                float:left; }
+
+
+.toppest .right{ width:50%;
+                 height:30px;
+                 float:right; }
+
+.toppest .right a{ text-decoration:none; 
+                   float:left;
+                   display:block;
+                   width:140px;
+                   color:white;
+                   text-align:center;
+                   height:30px; }
+body{ position:relative; }
+.top{ background-color:red;
+      height:70px;
+      margin:0px;
+      position:sticky;
+      top:-0px; }
+
+.top .left{ padding: 13px 0px 0px 0px;
+            width:280px; 
+            float:left; }
+
+.top .mid{ margin:13px 0px 0px 0px;
+           float:left; }
+
+#in1{ height:40px;
+      width:500px;
+      padding: 0px 0px 0px 10px;
+      font-size:15px; 
+      margin:0px; }
+
+#in2{ height:43px;
+      width:100px;
+      padding: 0px 0px 0px 0px;
+      font-size:15px; 
+      text-align:center; 
+      background-color:black; 
+      color:white; }
+
+.top .right ul a{ text-decoration:none; 
+                  float:left;
+                  display:block;
+                  width:160px;
+                  color:white;
+                  font-size:20px;
+                  text-align:center;
+                  height:70px;
+                  line-height:70px; }
+
+.top .right ul ul a{ text-decoration:none; 
+                     float:left;
+                     display:block;
+                     width:175px;
+                     color:white;
+                     font-size:15px;
+                     text-align:left;
+                     padding:0px;
+                     height:40px;
+                     line-height:40px; }
+
+.top .right ul ul a:hover{ background-color:rgba(0,0,0,1); }
+     
+.top .right .one{ padding: 0px 100px 0px 200px;
+                  width:200px; }
+
+.top .right .two:hover{ background-color:black; }
+
+.top .right ul li{ position:relative; }
+
+.top .right ul ul{ position:absolute;
+                   background-color:rgba(0,0,0,0.8);
+                   right:75px;
+                   top:70px;
+                   display:none; }
+
+.top .right ul li ul li:hover{ background-color:red; }
+
+.top .right ul li:hover > ul{ display:block; }
+
+#btn{ width:150px;
+      color:white;
+      background-color:red;
+      height:30px;
+      padding:0px;
+      line-height:30px;
+      text-align:center;
+      font-size:15px; }
+
+.all1{ text-decoration:none; 
+       display:block;
+       width:190px;
+       color:black;
+       font-size:20px;
+       text-align:left;
+       height:40px;
+       line-height:40px;
+       font-size:15px; }
+
+.all1-u{ text-decoration:none; 
+         display:block;
+         width:190px;
+         color:black;
+         font-size:20px;
+         text-align:left;
+         height:40px;
+         line-height:40px;
+         font-size:13px;}
+
+.all1:hover{ border-top:1px solid black;
+             border-bottom:1px solid black;
+             border-left:5px solid red;
+             height:38px;
+             padding:0px 0px 0px 5px; }
+
+.all1-u:hover{ border-top:1px solid black;
+               border-bottom:1px solid black;
+               border-left:5px solid red;
+               height:38px;
+               padding:0px 0px 0px 5px; }
+
+.side{ width:225px;
+       box-shadow:0px 0px 5px 2px grey;
+       padding:10px 0px 10px 0px; 
+       margin:10px 0px 10px 132px; }
+
+.club{ float:left; }
+
+.all2{ text-decoration:none;
+       color:black; }
+
+#li{ text-decoration:none;
+     color:blue; }
+
+#li:hover{ color:black; }
+
+.small{ width:222px;
+        height:100px;
+        margin:0px 0px 10px 131px;
+        top:100px; }
+
+.middle{ width:830px;
+         height:320px;
+         float:left;
+         padding:10px 0px 0px 0px;
+         margin:10px; }
+
+#btn1{ background-color:white; 
+       border-radius:100%; 
+       width:50px;
+       height:50px;
+       margin:140px 0px 0px 10px; }
+
+#btn1:hover{ background-color:black;}
+#btn2:hover{ background-color:black;}
+
+#btn2{ background-color:white;
+       border-radius:100%; 
+       width:50px;
+       height:50px;
+       margin:140px 10px 0px 0px; }
+
+.rside{ width:190px;
+        height:320px;
+        float:left;
+        margin:10px 0px; }
+
+.rside img{ margin:20px 0px 10px 0px; }
+
+.mid-down{ width:1030px;
+           height:600px;
+           float:left;
+           margin:20px 0px 10px 10px;
+           padding:15px; }
+
+.tren{ font-size:30px; }
+
+.mid-down .mid1{ height:500px;
+                 width:186px;
+                 float:left;
+                 margin:5px;
+                 padding:5px; }
+
+.mid-down .mid1:hover{ box-shadow:0px 0px 10px 5px rgba(0,0,0,0.2); }
+
+.box{ margin:980px 0px 0px 130px;
+      width:1270px;
+      height: 1120px }
+
+.box .boxes{ height:500px;
+             width:223px;
+             float:left;
+             margin:15px;
+             padding:5px; }
+
+.box .boxes:hover{ box-shadow:0px 0px 10px 5px rgba(0,0,0,0.2); }
+
+.full{ width:1270px;
+       margin:20px 0px 0px 130px; }
+
+.f-photo{ margin:10px 0px 0px 130px;
+          width:1270px;
+          height:300px; }
+
+.f-photo .pho{ height:270px;
+               width:295px;
+               float:left;
+               margin:15px 10px; }
+
+.bottom1{ margin:10px 0px 0px 130px;
+          width:1270px;
+          height:300px; }
+
+.bottom1 .bot1{ height:270px;
+                width:210px;
+                float:left;
+                margin:15px 10px; }
+
+.bottom1 .bot2{ height:270px;
+                width:265px;
+                float:left;
+                margin:15px 10px; }
+
+.bottom1 a{ text-decoration:none;
+            color:grey;
+            margin:10px; }
+
+.bottom1 a:hover{ text-decoration:underline;
+                  color:black; }
+
+.bottom2{ margin:10px 0px 0px 130px;
+          width:1270px;
+          height:100px; }
+
+.bottom2 .left{ margin:10px;
+                height:80px;
+                width:400px;
+                float:left; }
+
+.bottom2 .right{ margin:10px;
+                 height:80px;
+                 width:825px;
+                 float:left;
+                 padding:5px; }
+
+.bottomest{ margin:10px 0px 10px 130px;
+            width:1270px;
+            height:880px;
+            font-size:12px; }
