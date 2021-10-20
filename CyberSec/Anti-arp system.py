@@ -6,11 +6,11 @@ This is a tool designed to detect, prevent and recover from an ARP poisoning att
 import os
 import time
 
-# This function scans the arp cache and stores the mac addresses and ip addresses in separate lists. Then it checks if the subsequent mac addresses is already present in the list. If the mac address is already there in the list, then we can say that the system's ARP cache is poisoned, else it is safe.
+# This function scans the arp cache and stores the mac addresses and ip addresses in separate lists. Then it checks if the subsequent mac addresses is already present in the list. If the mac address is already there in the list, then we can say that the system's ARP cache is poisoned. else it is safe.
 
 def scan():
-	mac_list=[]
-	ip_list=[]
+         mac_list=[]
+	ip_list= []
 	with os.popen('arp -a') as f:
 		data = f.read()
 	data=data.split()
