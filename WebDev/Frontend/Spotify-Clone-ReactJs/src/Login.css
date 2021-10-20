@@ -1,0 +1,26 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  /* background-color: black; */
+  background:url(https://www.teahub.io/photos/full/111-1110552_spotify-hd.png);
+  background-position: center;
+  background-size:225vh;
+
+}
+
+.login > img {
+  width: auto;
+  height: 200px;
+}
+
+.login > a {
+  margin-top: 40vh;
+  padding: 20px;
+  border-radius: 99px;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+}

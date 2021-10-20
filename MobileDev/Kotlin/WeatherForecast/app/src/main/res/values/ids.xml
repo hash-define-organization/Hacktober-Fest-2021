@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textViewCityName" type="id">textViewCityName</item>
+    <item name="textCity" type="id">textCity</item>
+    <item name="buttonSearch" type="id">buttonSearch</item>
+    <item name="cityName" type="id">cityName</item>
+    <item name="textViewTemp" type="id">textViewTemp</item>
+    <item name="temperature" type="id">temperature</item>
+    <item name="condition" type="id">condition</item>
+    <item name="textViewCondition" type="id">textViewCondition</item>
+    <item name="region" type="id">region</item>
+    <item name="textViewRegion" type="id">textViewRegion</item>
+</resources>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+<style>
+*{ margin:0px;
+   padding:0px; }
+
+.top{ border: 1px solid black;
+      width:100%;
+      height:45px; 
+      font-size:60px;
+      text-shadow:5px 5px 5px blue;
+      line-height:60px;
+      text-align:center;
+      margin-top:15px;
+      color:red; }
+
+.he:hover{ font-size:80px;
+           color:blue;
+           text-shadow:5px 5px 10px red; }
+
+.side{ width:72%;
+       float:left; }
+
+.right{ width:25%;
+        float:right;
+        font-size:1.7em;
+        color:white;
+        padding:10px 20px;
+        text-align:right; }
+
+table{ border-collapse:collapse;
+       border:5px solid blue; } 
+
+td { border:5px solid blue;
+     width:120px;
+     height:100px; }
+
+#1th{   width:100px;
+        height: 4em;
+        font-size:16px;
+        color:red; }
+
+#2th{ width:100px;
+        height: 2.5em;
+        font-size:16px; 
+        color:red; }
+
+#btn{ width:100px;
+      height:60px;
+      color:red;
+      background-color:red;
+      border-radius:50%; }
+
+
+.A, .B, .C, .D, .E, .F, .G, .H, .I, .J, .K, .L, .M, .N, .O{ background-color:black;
+                                                            line-height:100px; 
+                                                            text-align:center;
+                                                            width:100%;
+                                                            height:100%; 
+                                                            font-size: 4em; }
+
+.xyz{ background-color:grey;
+      color:red; }
+
+</style>
+</head>
+<body bgcolor="black">
+<div class="top">
+<span class="he">Pair Making</span>
+</div>
+<br><br>
+
+<div class="side"><br><br><center><table>
+       <tr> 
+           <td><div id="1" class="A" onclick="one()"></div></td>
+           <td><div id="2" class="B" onclick="two()"></div></td>
+           <td><div id="3" class="C" onclick="three()"></td>
+           <td><div id="4" class="D" onclick="four()"></td>
+           <td><div id="5" class="E" onclick="five()"></td>
+           <td><div id="6" class="F" onclick="six()"></div></td>
+       </tr>
+
+       <tr> 
+           <td><div id="7" class="G" onclick="seven()"></div></td>
+           <td><div id="8" class="H" onclick="eight()"></div></td>
+           <td><div id="9" class="I" onclick="nine()"></div></td>
+           <td><div id="10" class="H" onclick="ten()"></div></td>
+           <td><div id="11" class="F" onclick="eleven()"></div></td>
+           <td><div id="12" class="J" onclick="twelve()"></div></td>
+       </tr>
+
+       <tr> 
+           <td><div id="13" class="K" onclick="thirteen()"></div></td>
+           <td><div id="14" class="D" onclick="fourteen()"></div></td>
+           <td><div id="15" class="J" onclick="fifteen()"></div></td>
+           <td><div id="16" class="A" onclick="sixteen()"></div></td>
+           <td><div id="17" class="N" onclick="seventeen()"></div></td>
+           <td><div id="18" class="E" onclick="eighteen()"></div></td>
+       </tr>
+
+       <tr> 
+           <td><div id="19" class="I" onclick="nineteen()"></div></td>
+           <td><div id="20" class="L" onclick="twenty()"></div></td>
+           <td><div id="21" class="M" onclick="twentyone()"></div></td>
+           <td><div id="22" class="O" onclick="twentytwo()"></div></td>
+           <td><div id="23" class="O" onclick="twentythree()"></div></td>
+           <td><div id="24" class="L" onclick="twentyfour()"></div></td>
+       </tr>
+
+       <tr> 
+           <td><div id="25" class="B" onclick="twentyfive()"></div></td>
+           <td><div id="26" class="M" onclick="twentysix()"></div></td>
+           <td><div id="27" class="N" onclick="twentyseven()"></div></td>
+           <td><div id="28" class="G" onclick="twentyeight()"></div></td>
+           <td><div id="29" class="K" onclick="twentynine()"></div></td>
+           <td><div id="30" class="C" onclick="thirty()"></div></td>
+       </tr>
+</table>
+</center>
+</div>
+
+<div class="right">
+<form method="POST" onsubmit="sub()">
+       Pair 1:&nbsp;&nbsp;&nbsp;
+       <input type="number" id="1th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required autofocus>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="2th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+       Pair 2:&nbsp;&nbsp;&nbsp;
+       <input type="number" id="3th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="4th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+       Pair 3:&nbsp;&nbsp;&nbsp;
+       <input type="number" id="5th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="6th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+       Pair 4:&nbsp;&nbsp;&nbsp;
+       <input type="number" id="7th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="8th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+       Pair 5:&nbsp;&nbsp;&nbsp;
+       <input type="number" id="9th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="10th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+       Pair 6:&nbsp;&nbsp;&nbsp;
+       <input type="number" id="11th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="12th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+        Pair 7:&nbsp;&nbsp;&nbsp;
+       <input type="number" id="13th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="14th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+       Pair 8:&nbsp;&nbsp;&nbsp;
+       <input type="number" id="15th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="16th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+       Pair 9:&nbsp;&nbsp;&nbsp;
+       <input type="number" id="17th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="18th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+        Pair 10:&nbsp;
+       <input type="number" id="19th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="20th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+        Pair 11:&nbsp;
+       <input type="number" id="21th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="22th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+       Pair 12:&nbsp;
+       <input type="number" id="23th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="24th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+       Pair 13:&nbsp;
+       <input type="number" id="25th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="26th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+        Pair 14:&nbsp;
+       <input type="number" id="27th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="28th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+        Pair 15:&nbsp;
+       <input type="number" id="29th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;
+       <input type="number" id="30th" max="30" min="1" style="color:red; height:25px; width:50px; font-size:25px; padding-left: 10px; margin:3px 0px;" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+<br>
+<center>&nbsp;&nbsp;&nbsp;<input type="submit" name="btn" id="btn"></center>
+</form>
+</div>
+
+<script>
+
+var sc=0;
+function sub()
+{
+    var a = document.getElementById("1th").value;
+    var b = document.getElementById("2th").value;
+    var c = document.getElementById("3th").value;
+    var d = document.getElementById("4th").value;
+    var e = document.getElementById("5th").value;
+    var f = document.getElementById("6th").value;
+    var g = document.getElementById("7th").value;
+    var h = document.getElementById("8th").value;
+    var i = document.getElementById("9th").value;
+    var j = document.getElementById("10th").value;
+    var k = document.getElementById("11th").value;
+    var l = document.getElementById("12th").value;
+    var m = document.getElementById("13th").value;
+    var n = document.getElementById("14th").value;
+    var o = document.getElementById("15th").value;
+    var p = document.getElementById("16th").value;
+    var q = document.getElementById("17th").value;
+    var r = document.getElementById("18th").value;
+    var s = document.getElementById("19th").value;
+    var t = document.getElementById("20th").value;
+    var u = document.getElementById("21th").value;
+    var v = document.getElementById("22th").value;
+    var w = document.getElementById("23th").value;
+    var x = document.getElementById("24th").value;
+    var y = document.getElementById("25th").value;
+    var z = document.getElementById("26th").value;
+    var z1 = document.getElementById("27th").value;
+    var z2 = document.getElementById("28th").value;
+    var z3 = document.getElementById("29th").value;
+    var z4 = document.getElementById("30th").value;
+  
+    if( (a==1 && b==16) || (a==2 && b==25) || (a==3 && b==30) || (a==4 && b==14) || (a==5 && b==18) || (a==6 && b==11) || (a==7 && b==28) || (a==8 && b==10) || (a==9 && b==19) || (a==12 && b==15) || (a==13 && b==29) || (a==17 && b==27) || (a==20 && b==24) || (a==21 && b==26) || (a==22 && b==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (c==1 && d==16) || (c==2 && d==25) || (c==3 && d==30) || (c==4 && d==14) || (c==5 && d==18) || (c==6 && d==11) || (c==7 && d==28) || (c==8 && d==10) || (c==9 && d==19) || (c==12 && d==15) || (c==13 && d==29) || (c==17 && d==27) || (c==20 && d==24) || (c==21 && d==26) || (c==22 && d==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (e==1 && f==16) || (e==2 && f==25) || (e==3 && f==30) || (e==4 && f==14) || (e==5 && f==18) || (e==6 && f==11) || (e==7 && f==28) || (e==8 && f==10) || (e==9 && f==19) || (e==12 && f==15) || (e==13 && f==29) || (e==17 && f==27) || (e==20 && f==24) || (e==21 && f==26) || (e==22 && f==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (g==1 && h==16) || (g==2 && h==25) || (g==3 && h==30) || (g==4 && h==14) || (g==5 && h==18) || (g==6 && h==11) || (g==7 && h==28) || (g==8 && h==10) || (g==9 && h==19) || (g==12 && h==15) || (g==13 && h==29) || (g==17 && h==27) || (g==20 && h==24) || (g==21 && h==26) || (g==22 && h==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (i==1 && j==16) || (i==2 && j==25) || (i==3 && j==30) || (i==4 && j==14) || (i==5 && j==18) || (i==6 && j==11) || (i==7 && j==28) || (i==8 && j==10) || (i==9 && j==19) || (i==12 && j==15) || (i==13 && j==29) || (i==17 && j==27) || (i==20 && j==24) || (i==21 && j==26) || (i==22 && j==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (k==1 && l==16) || (k==2 && l==25) || (k==3 && l==30) || (k==4 && l==14) || (k==5 && l==18) || (k==6 && l==11) || (k==7 && l==28) || (k==8 && l==10) || (k==9 && l==19) || (k==12 && l==15) || (k==13 && l==29) || (k==17 && l==27) || (k==20 && l==24) || (k==21 && l==26) || (k==22 && l==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (m==1 && n==16) || (m==2 && n==25) || (m==3 && n==30) || (m==4 && n==14) || (m==5 && n==18) || (m==6 && n==11) || (m==7 && n==28) || (m==8 && n==10) || (m==9 && n==19) || (m==12 && n==15) || (m==13 && n==29) || (m==17 && n==27) || (m==20 && n==24) || (m==21 && n==26) || (m==22 && n==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (o==1 && p==16) || (o==2 && p==25) || (o==3 && p==30) || (o==4 && p==14) || (o==5 && p==18) || (o==6 && p==11) || (o==7 && p==28) || (o==8 && p==10) || (o==9 && p==19) || (o==12 && p==15) || (o==13 && p==29) || (o==17 && p==27) || (o==20 && p==24) || (o==21 && p==26) || (o==22 && p==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (q==1 && r==16) || (q==2 && r==25) || (q==3 && r==30) || (q==4 && r==14) || (q==5 && r==18) || (q==6 && r==11) || (q==7 && r==28) || (q==8 && r==10) || (q==9 && r==19) || (q==12 && r==15) || (q==13 && r==29) || (q==17 && r==27) || (q==20 && r==24) || (q==21 && r==26) || (q==22 && r==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (s==1 && t==16) || (s==2 && t==25) || (s==3 && t==30) || (s==4 && t==14) || (s==5 && t==18) || (s==6 && t==11) || (s==7 && t==28) || (s==8 && t==10) || (s==9 && t==19) || (s==12 && t==15) || (s==13 && t==29) || (s==17 && t==27) || (s==20 && t==24) || (s==21 && t==26) || (s==22 && t==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (u==1 && v==16) || (u==2 && v==25) || (u==3 && v==30) || (u==4 && v==14) || (u==5 && v==18) || (u==6 && v==11) || (u==7 && v==28) || (u==8 && v==10) || (u==9 && v==19) || (u==12 && v==15) || (u==13 && v==29) || (u==17 && v==27) || (u==20 && v==24) || (u==21 && v==26) || (u==22 && v==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (w==1 && x==16) || (w==2 && x==25) || (w==3 && x==30) || (w==4 && x==14) || (w==5 && x==18) || (w==6 && x==11) || (w==7 && x==28) || (w==8 && x==10) || (w==9 && x==19) || (w==12 && x==15) || (w==13 && x==29) || (w==17 && x==27) || (w==20 && x==24) || (w==21 && x==26) || (w==22 && x==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (y==1 && z==16) || (y==2 && z==25) || (y==3 && z==30) || (y==4 && z==14) || (y==5 && z==18) || (y==6 && z==11) || (y==7 && z==28) || (y==8 && z==10) || (y==9 && z==19) || (y==12 && z==15) || (y==13 && z==29) || (y==17 && z==27) || (y==20 && z==24) || (y==21 && z==26) || (y==22 && z==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (z1==1 && z2==16) || (z1==2 && z2==25) || (z1==3 && z2==30) || (z1==4 && z2==14) || (z1==5 && z2==18) || (z1==6 && z2==11) || (z1==7 && z2==28) || (z1==8 && z2==10) || (z1==9 && z2==19) || (z1==12 && z2==15) || (z1==13 && z2==29) || (z1==17 && z2==27) || (z1==20 && z2==24) || (z1==21 && z2==26) || (z1==22 && z2==23) )
+    { 
+           sc=sc+10;
+     }
+
+    if( (z3==1 && z4==16) || (z3==2 && z4==25) || (z3==3 && z4==30) || (z3==4 && z4==14) || (z3==5 && z4==18) || (z3==6 && z4==11) || (z3==7 && z4==28) || (z3==8 && z4==10) || (z3==9 && z4==19) || (z3==12 && z4==15) || (z3==13 && z4==29) || (z3==17 && z4==27) || (z3==20 && z4==24) || (z3==21 && z4==26) || (z3==22 && z4==23) )
+    { 
+           sc=sc+10;
+     }
+    if(sc>=60)
+    {
+          document.write("<div style='width:100%; height:100%; background-color:black;'><center><br><br><br><br><br><br><br><br><br><br><font style='font-size:3.5em' color='green'>Congrats!!! You Made It</font><br><font style='font-size:5em;' color='blue'><B><U>SCORE:&nbsp;&nbsp;"+sc+"</U></B></font><br><font style='font-size:3em;' color='white'>Refresh the Page to Play Again</font></center></div>"); 
+     }
+    else
+    {
+
+          document.write("<div style='width:100%; height:100%; background-color:black;'><center><br><br><br><br><br><br><br><br><br><br><font style='font-size:3.5em' color='red'>Better Luck Next Time!!!&nbsp;:-)</font><br><font style='font-size:5em;' color='blue'><B><U>SCORE:&nbsp;&nbsp;"+sc+"</U></B></font><br><font style='font-size:3em;' color='white'>Refresh the Page to Play Again</font></center></div>"); 
+     }
+}
+
+//function abc()
+{
+     //location.reload();
+}
+
+function hide()
+{
+      document.getElementById("1").classList.remove("xyz");
+      document.getElementById("2").classList.remove("xyz");
+      document.getElementById("3").classList.remove("xyz");
+      document.getElementById("4").classList.remove("xyz");
+      document.getElementById("5").classList.remove("xyz");
+      document.getElementById("6").classList.remove("xyz");
+      document.getElementById("7").classList.remove("xyz");
+      document.getElementById("8").classList.remove("xyz");
+      document.getElementById("9").classList.remove("xyz");
+      document.getElementById("10").classList.remove("xyz");
+      document.getElementById("11").classList.remove("xyz");
+      document.getElementById("12").classList.remove("xyz");
+      document.getElementById("13").classList.remove("xyz");
+      document.getElementById("14").classList.remove("xyz");
+      document.getElementById("15").classList.remove("xyz");
+      document.getElementById("16").classList.remove("xyz");
+      document.getElementById("17").classList.remove("xyz");
+      document.getElementById("18").classList.remove("xyz");
+      document.getElementById("19").classList.remove("xyz");
+      document.getElementById("20").classList.remove("xyz");
+      document.getElementById("21").classList.remove("xyz");
+      document.getElementById("22").classList.remove("xyz");
+      document.getElementById("23").classList.remove("xyz");
+      document.getElementById("24").classList.remove("xyz");
+      document.getElementById("25").classList.remove("xyz");
+      document.getElementById("26").classList.remove("xyz");
+      document.getElementById("27").classList.remove("xyz");
+      document.getElementById("28").classList.remove("xyz");
+      document.getElementById("29").classList.remove("xyz");
+      document.getElementById("30").classList.remove("xyz");
+}
+function one(){
+      hide();
+      document.getElementById("1").classList.add("xyz");
+      document.getElementById("1").innerText="A";
+}
+
+function two(){
+      hide();
+      document.getElementById("2").classList.add("xyz");
+      document.getElementById("2").innerText="B";
+}
+
+function three(){
+      hide();
+      document.getElementById("3").innerText="C";
+      document.getElementById("3").classList.add("xyz");
+}
+
+function four(){
+      hide();
+      document.getElementById("4").classList.add("xyz");
+      document.getElementById("4").innerText="D";
+}
+
+
+function five(){
+      hide();
+      document.getElementById("5").classList.add("xyz");
+      document.getElementById("5").innerText="E";
+}
+
+function six(){
+      hide();
+      document.getElementById("6").classList.add("xyz");
+      document.getElementById("6").innerText="F";
+}
+
+function seven(){
+      hide();
+      document.getElementById("7").classList.add("xyz");
+      document.getElementById("7").innerText="G";
+}
+
+function eight(){
+      hide();
+      document.getElementById("8").classList.add("xyz");
+      document.getElementById("8").innerText="H";
+}
+
+function nine(){
+      hide();
+      document.getElementById("9").classList.add("xyz");
+      document.getElementById("9").innerText="I";
+}
+
+function ten(){
+      hide();
+      document.getElementById("10").classList.add("xyz");
+      document.getElementById("10").innerText="H";
+}
+
+function eleven(){
+      hide();
+      document.getElementById("11").classList.add("xyz");
+      document.getElementById("11").innerText="F";
+}
+
+function twelve(){
+      hide();
+      document.getElementById("12").classList.add("xyz");
+      document.getElementById("12").innerText="J";
+}
+
+function thirteen(){
+      hide();
+      document.getElementById("13").classList.add("xyz");
+      document.getElementById("13").innerText="K";
+}
+
+function fourteen(){
+      hide();
+      document.getElementById("14").classList.add("xyz");
+      document.getElementById("14").innerText="D";
+}
+
+function fifteen(){
+      hide();
+      document.getElementById("15").classList.add("xyz");
+      document.getElementById("15").innerText="J";
+}
+
+function sixteen(){
+      hide();
+      document.getElementById("16").classList.add("xyz");
+      document.getElementById("16").innerText="A";
+}
+
+function seventeen(){
+      hide();
+      document.getElementById("17").classList.add("xyz");
+      document.getElementById("17").innerText="N";
+}
+
+function eighteen(){
+      hide();
+      document.getElementById("18").classList.add("xyz");
+      document.getElementById("18").innerText="E";
+}
+
+function nineteen(){
+      hide();
+      document.getElementById("19").classList.add("xyz");
+      document.getElementById("19").innerText="I";
+}
+
+function twenty(){
+      hide();
+      document.getElementById("20").classList.add("xyz");
+      document.getElementById("20").innerText="L";
+}
+
+function twentyone(){
+      hide();
+      document.getElementById("21").classList.add("xyz");
+      document.getElementById("21").innerText="M";
+}
+
+function twentytwo(){
+      hide();
+      document.getElementById("22").classList.add("xyz");
+      document.getElementById("22").innerText="O";
+}
+
+function twentythree(){
+      hide();
+      document.getElementById("23").classList.add("xyz");
+      document.getElementById("23").innerText="O";
+}
+
+function twentyfour(){
+      hide();
+      document.getElementById("24").classList.add("xyz");
+      document.getElementById("24").innerText="L";
+}
+
+function twentyfive(){
+      hide();
+      document.getElementById("25").classList.add("xyz");
+      document.getElementById("25").innerText="B";
+}
+
+function twentysix(){
+      hide();
+      document.getElementById("26").classList.add("xyz");
+      document.getElementById("26").innerText="M";
+}
+
+function twentyseven(){
+      hide();
+      document.getElementById("27").classList.add("xyz");
+      document.getElementById("27").innerText="N";
+}
+
+function twentyeight(){
+      hide();
+      document.getElementById("28").classList.add("xyz");
+      document.getElementById("28").innerText="G";
+}
+
+function twentynine(){
+      hide();
+      document.getElementById("29").classList.add("xyz");
+      document.getElementById("29").innerText="K";
+}
+
+function thirty(){
+      hide();
+      document.getElementById("30").classList.add("xyz");
+      document.getElementById("30").innerText="C";
+}
+
+</script>
+
+</body>
+</html>

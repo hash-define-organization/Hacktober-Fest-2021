@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/CalculatorTxt"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:textSize="48sp"
+        android:textColor="#BBC3C9"
+        android:maxLength="12"
+        android:padding="10dp"
+        android:gravity="right|bottom|center_vertical"
+        />
+
+    <!-- Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/bttn7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="onDigit"
+            android:text="@string/btn7"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/bttn8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="onDigit"
+            android:text="@string/btn8"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/bttn9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="onDigit"
+
+            android:text="@string/btn9"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/operator_rouned_button"
+            android:onClick="onOperator"
+            android:text="@string/btnDiv"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <!-- Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/bttn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="onDigit"
+
+            android:text="@string/btn4"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/bttn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="onDigit"
+
+            android:text="@string/btn5"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/bttn6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="onDigit"
+
+            android:text="@string/btn6"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/Multiply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/operator_rouned_button"
+            android:onClick="onOperator"
+
+            android:text="@string/btnMult"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <!-- Row 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/bttn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="onDigit"
+
+            android:text="@string/btn1"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/bttn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="onDigit"
+
+            android:text="@string/btn2"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/bttn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:onClick="onDigit"
+
+            android:text="@string/btn3"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/subtract"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/operator_rouned_button"
+            android:onClick="onOperator"
+            android:text="@string/btnSub"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <!-- Row 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/Decimal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/zero_decimal_button"
+            android:onClick="onDecimalPoint"
+            android:text="@string/btnDecimal"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/Zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/zero_decimal_button"
+            android:onClick="onDigit"
+            android:text="@string/btn0"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/clear_rounded_button"
+            android:onClick="onClear"
+            android:text="@string/btnClear"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/operator_rouned_button"
+            android:onClick="onOperator"
+            android:text="@string/btnAdd"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <!-- Equal Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/Equal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@drawable/rounded_equal_button"
+            android:onClick="onEqual"
+            android:text="@string/btnEqual"
+            android:textSize="50sp" />
+    </LinearLayout>>
+
+</LinearLayout>
