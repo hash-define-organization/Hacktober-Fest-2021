@@ -1,10 +1,14 @@
-# Calculator_App
-A calculator app made with Kotlin
-
-I would like someone to improve upon it's UI.
+This is a quiz app for Marvel and DC fans.  @rahulsain 
+Please assign this issue to me @ij007 
 
 <p align = "left">
-<img src ="https://user-images.githubusercontent.com/59731205/137532649-41aff6bd-c117-4b46-99d9-08270d8aac27.png" width="200">
-<img src ="https://user-images.githubusercontent.com/59731205/137532789-26f11732-6eeb-46a7-adc1-1dce2669a589.png" width="200">
+<img src="https://user-images.githubusercontent.com/59731205/138231597-cefc4a27-3d9f-4dec-80ab-f43a344b95ae.png" width ="200">
+<img src="https://user-images.githubusercontent.com/59731205/138231899-214c5c29-2136-4826-a974-3be096ff750c.png" width ="200">
+<img src="https://user-images.githubusercontent.com/59731205/138232001-eade077b-84a2-498b-a7fa-2f9e5ae52476.png" width ="200">
 </p>
+
+[video1](https://user-images.githubusercontent.com/59731205/138166675-6a914fb7-daad-4346-8ca3-aa25bcbafb33.mp4)
+
+https://user-images.githubusercontent.com/59731205/138167517-0f1b2276-b4d7-4bfa-ab63-67a834defb8d.mp4
+
 
