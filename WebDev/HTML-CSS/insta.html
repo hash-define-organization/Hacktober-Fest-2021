@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset = "UTF-8">
+        <meta name="veiwport" content="width=device-width,initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title> Website </title>
+       <style>
+           *{
+               margin:0;
+               padding:0;
+               box-sizing:border-box;
+           }
+           body{
+               width:100%;
+               height:100vh;
+               display:flex;
+               justify-content: center;
+               align-items: center;
+               background: #ff6262;
+               position:relative;
+               perspective:1000px;
+               overflow:hidden;
+           }
+           
+           body::before{
+               content:'';
+               position:absolute;
+               top:0;
+               left:50%;
+               transform: translateX(-50%);
+               width:20px;
+               height:100vh;
+               background: #ff6262;
+           }
+           .header{
+               position:relative;
+               width:20px;
+               height:100vh;
+               background:#ff6262;
+               display:flex;
+               justify-content: center;
+               align-items: center;
+               transform:rotateX(150deg);
+               animation:rotateX 1s 1s forwards 1,scale 2s 2.2s forwards 1;
+               
+           }
+       
+           .header::before{
+               content:'';
+               position:absolute;
+               top:100%;
+               left:0;
+               width:3px;
+               height:100%;
+               background-color: #fff;
+               animation:slide-in 1s forwards 1;
+           }
+           
+            .header::after{
+               content:'';
+               position:absolute;
+               top:-100%;
+               right:0;
+               width:3px;
+               height:100%;
+               background-color: #fff;
+               animation:slide-in 1s forwards 1;
+           }
+           
+           @keyframes slide-in{
+               99%{
+                   top:0;
+                   opacity: 1;
+               }
+               100%{
+                   top:0;
+                   opacity:0;
+               }
+           }
+       
+           @keyframes rotateX{
+               0%{
+                   transform:rotateX(180deg);
+                   height:100px;
+                   background-color: #fbfbfb;
+               }
+               100%{
+                   transform:rotateX(0deg);
+                   height:95%;
+                   background-color: #fbfbfb;
+                   
+               }
+           }
+           @keyframes scale{
+               100%{
+                   width:92%;
+                   border-radius: 10px;
+                   padding: 0 60px;
+                   box-shadow: 0 40px 50px rgba(0,0,0,0.25);
+               }
+           }
+           
+           .col{
+               width:50%;
+               height:100%;
+               display:flex;
+               justify-content: :center;
+               align-items: center;
+               opacity:0;
+               animation: fade-in 1s forwards 1;
+               animation-delay: 4s;
+           }
+           
+           @keyframes fade-in{
+               100%{
+                   opacity:1;
+               }
+           }
+           .svg{
+               width:80%;
+               height:80%;
+               object-fit:contain;
+               
+           }
+           .heading{
+               font-family: 'dosis';
+               text-transform: capitalize;
+               color:black;
+               font-weight:600;
+               font-size:50px;
+               line-height:50px;
+           }
+           
+           .heading span{
+               display:block;
+               color:#ff6262;
+               font-size: :120px;
+               line-height:120px;
+           }
+           .info{
+               margin:40px 0;
+               font-family:'roboto',sans-serif;
+               text-transform:capitalize;
+               font-size:20px;
+               line-height: 30px;
+           }
+           
+           .btn{
+               padding:10px 20px;
+               font-size: 16px;
+               border-radius: 50px;
+               border:2px solid #ff6262;
+               text-transform:capitalize;
+               color:#ff6262;
+               background: none;
+               transition:.5s;
+               cursor: pointer;
+               
+           }
+           
+           .btn:hover{
+               background: #ff6262;
+               color:#fff;
+           }
+           
+           .register-count{
+               padding:10px 20px;
+               background: #ffeeee;
+               font-family: 'roboto',sans-serif;
+               text-transform: capitalize;
+               margin-left:20px;
+           }
+       
+       </style>
+       
+  </head>
+<body>
+
+        <header class ="header">
+           <div class="col">
+              <div class="content">
+               <h1 class="heading">Hacktober Fest<span>Open Source Git,GitHub!</span></h1>
+               <p class="info">Hacktoberfest is a monthlong celebration of open source software run by DigitalOcean. Hacktoberfest is open to everyone in our global community! Four quality pull requests must be submitted to public GitHub repositories.</p>
+                <button class="btn">Know More!</button>
+                <span class="register-count">2021 in</span>
+               
+              </div>
+            
+            
+            </div>
+        <div class="col">
+            
+        <img src="hackto.jpg" class="svg" alt="">
+        </div>
+    
+        </header>
+    
+    
+</body>
+
+
+</html>
