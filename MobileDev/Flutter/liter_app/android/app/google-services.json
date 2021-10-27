@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "306883522578",
+    "project_id": "linuxterminalproject",
+    "storage_bucket": "linuxterminalproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306883522578:android:55ea945f6e15e032aa68cb",
+        "android_client_info": {
+          "package_name": "com.abhi.liter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306883522578-and5iejcgp3r4hk15omduibqeodd585q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAflRkCwBG21915zISSpI5SJo9v8WL9H9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306883522578-and5iejcgp3r4hk15omduibqeodd585q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
