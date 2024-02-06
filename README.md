@@ -6,7 +6,6 @@
    #define
    <br>
 </h1>
-
 <p align="center">  
  <a href="https://discord.gg/tTs553YWyb">
     <img width="30px" src="https://www.vectorlogo.zone/logos/discordapp/discordapp-tile.svg" />
