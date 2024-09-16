@@ -1,0 +1,25 @@
+Find nCr for given n and r.
+
+Example 1:
+
+Input:
+n = 3, r = 2
+Output: 3
+Example 2:
+
+Input:
+n = 4, r = 2
+Output: 6
+Your Task:
+Complete the function nCrModp() which takes two integers n and r as input parameters and returns the nCr mod 109+7.
+Note: nCr does not exist when r > n. Hence, return 0 in that case.
+
+Expected Time Complexity : O(N*R)
+Expected Auxiliary Space: O(N)
+
+Constraints:
+1<= n <= 103
+1<= r <= 103
+
+Company Tags
+ Amazon
